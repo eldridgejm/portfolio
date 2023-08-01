@@ -1,0 +1,1195 @@
+{
+    "collections": {
+        "lectures/schedules/tr": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "slides.pdf"
+                ],
+                "optional_artifacts": [
+                    "notes.pdf",
+                    "marked.pdf",
+                    "notebook"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "videos": {
+                            "nullable": true,
+                            "type": "any"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "date": "2023-04-04",
+                        "number": 1,
+                        "topic": "Introduction",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/01-intro/slides.pdf"
+                        }
+                    }
+                },
+                "02-linear_algebra-I": {
+                    "metadata": {
+                        "date": "2023-04-06",
+                        "number": 2,
+                        "topic": "Linear Algrebra",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/02-linear_algebra-I/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/02-linear_algebra-I/marked.pdf"
+                        }
+                    }
+                },
+                "03-linear_algebra-II": {
+                    "metadata": {
+                        "date": "2023-04-11",
+                        "number": 3,
+                        "topic": "Matrices",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/03-linear_algebra-II/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/03-linear_algebra-II/marked.pdf"
+                        }
+                    }
+                },
+                "04-linear_algebra-III": {
+                    "metadata": {
+                        "date": "2023-04-13",
+                        "number": 4,
+                        "topic": "Eigenvectors",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/04-linear_algebra-III/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/04-linear_algebra-III/marked.pdf"
+                        }
+                    }
+                },
+                "05-linear_algebra-IV": {
+                    "metadata": {
+                        "date": "2023-04-18",
+                        "number": 5,
+                        "topic": "Diagonalization and PCA",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/05-linear_algebra-IV/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/05-linear_algebra-IV/marked.pdf"
+                        }
+                    }
+                },
+                "06-pca-I": {
+                    "metadata": {
+                        "date": "2023-04-20",
+                        "number": 6,
+                        "topic": "PCA",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/06-pca-I/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/06-pca-I/marked.pdf"
+                        }
+                    }
+                },
+                "07-pca-II": {
+                    "metadata": {
+                        "date": "2023-04-25",
+                        "number": 7,
+                        "topic": "PCA II",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/07-pca-II/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/07-pca-II/marked.pdf"
+                        }
+                    }
+                },
+                "08-pca-III": {
+                    "metadata": {
+                        "date": "2023-04-27",
+                        "number": 8,
+                        "topic": "PCA III",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/08-pca-III/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/08-pca-III/marked.pdf"
+                        }
+                    }
+                },
+                "09-laplacian_eigenmaps": {
+                    "metadata": {
+                        "date": "2023-05-02",
+                        "number": 9,
+                        "topic": "Laplacian Eigenmaps",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/09-laplacian_eigenmaps/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/09-laplacian_eigenmaps/marked.pdf"
+                        }
+                    }
+                },
+                "10-linear_models": {
+                    "metadata": {
+                        "date": "2023-05-09",
+                        "number": 10,
+                        "topic": "Linear Models",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/10-linear_models/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/10-linear_models/marked.pdf"
+                        }
+                    }
+                },
+                "11-feature_maps": {
+                    "metadata": {
+                        "date": "2023-05-11",
+                        "number": 11,
+                        "topic": "Feature Maps",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/11-feature_maps/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/11-feature_maps/marked.pdf"
+                        }
+                    }
+                },
+                "12-rbf_networks": {
+                    "metadata": {
+                        "date": "2023-05-16",
+                        "number": 12,
+                        "topic": "RBF Networks and Neural Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/12-rbf_networks/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/12-rbf_networks/marked.pdf"
+                        }
+                    }
+                },
+                "13-neural_networks": {
+                    "metadata": {
+                        "date": "2023-05-18",
+                        "number": 13,
+                        "topic": "Training Neural Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/13-neural_networks/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/13-neural_networks/marked.pdf"
+                        }
+                    }
+                },
+                "14-training_nns": {
+                    "metadata": {
+                        "date": "2023-05-23",
+                        "number": 14,
+                        "topic": "Backpropagation",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/14-training_nns/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/14-training_nns/marked.pdf"
+                        }
+                    }
+                },
+                "15-sgd": {
+                    "metadata": {
+                        "date": "2023-05-25",
+                        "number": 15,
+                        "topic": "SGD",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/15-sgd/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/15-sgd/marked.pdf"
+                        }
+                    }
+                },
+                "16-cnn": {
+                    "metadata": {
+                        "date": "2023-05-30",
+                        "number": 16,
+                        "topic": "Convolutional Neural Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/16-cnn/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/16-cnn/marked.pdf"
+                        }
+                    }
+                },
+                "17-autoencoders": {
+                    "metadata": {
+                        "date": "2023-06-06",
+                        "number": 17,
+                        "topic": "Autoencoders",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/tr/17-autoencoders/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/tr/17-autoencoders/marked.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "lectures/schedules/mwf": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "slides.pdf"
+                ],
+                "optional_artifacts": [
+                    "notes.pdf",
+                    "marked.pdf",
+                    "notebook"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "videos": {
+                            "nullable": true,
+                            "type": "any"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "date": "2023-04-03",
+                        "number": 1,
+                        "topic": "Introduction",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/01-intro/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/01-intro/marked.pdf"
+                        }
+                    }
+                },
+                "02-coordinate_vectors": {
+                    "metadata": {
+                        "date": "2023-04-05",
+                        "number": 2,
+                        "topic": "Coordinate Vectors",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/02-coordinate_vectors/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/02-coordinate_vectors/marked.pdf"
+                        }
+                    }
+                },
+                "03-linear_transformations": {
+                    "metadata": {
+                        "date": "2023-04-07",
+                        "number": 3,
+                        "topic": "Linear Transformations",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/03-linear_transformations/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/03-linear_transformations/marked.pdf"
+                        }
+                    }
+                },
+                "04-matrices": {
+                    "metadata": {
+                        "date": "2023-04-10",
+                        "number": 4,
+                        "topic": "Matrices",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/04-matrices/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/04-matrices/marked.pdf"
+                        }
+                    }
+                },
+                "05-eigenvectors": {
+                    "metadata": {
+                        "date": "2023-04-12",
+                        "number": 5,
+                        "topic": "Eigenvectors",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/05-eigenvectors/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/05-eigenvectors/marked.pdf"
+                        }
+                    }
+                },
+                "06-change_of_basis": {
+                    "metadata": {
+                        "date": "2023-04-14",
+                        "number": 6,
+                        "topic": "Changing Basis",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/06-change_of_basis/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/06-change_of_basis/marked.pdf"
+                        }
+                    }
+                },
+                "07-pca-I": {
+                    "metadata": {
+                        "date": "2023-04-17",
+                        "number": 7,
+                        "topic": "PCA, Part I",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/07-pca-I/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/07-pca-I/marked.pdf"
+                        }
+                    }
+                },
+                "08-pca-II": {
+                    "metadata": {
+                        "date": "2023-04-19",
+                        "number": 8,
+                        "topic": "PCA, Part II",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/08-pca-II/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/08-pca-II/marked.pdf"
+                        }
+                    }
+                },
+                "09-pca-III": {
+                    "metadata": {
+                        "date": "2023-04-21",
+                        "number": 9,
+                        "topic": "PCA, Part III",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/09-pca-III/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/09-pca-III/marked.pdf"
+                        }
+                    }
+                },
+                "10-pca-IV": {
+                    "metadata": {
+                        "date": "2023-04-24",
+                        "number": 10,
+                        "topic": "PCA, Part IV",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/10-pca-IV/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/10-pca-IV/marked.pdf"
+                        }
+                    }
+                },
+                "11-pca-V": {
+                    "metadata": {
+                        "date": "2023-04-26",
+                        "number": 11,
+                        "topic": "PCA, Part V",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/11-pca-V/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/11-pca-V/marked.pdf"
+                        }
+                    }
+                },
+                "12-pca-VI": {
+                    "metadata": {
+                        "date": "2023-04-28",
+                        "number": 12,
+                        "topic": "PCA, Part VI",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/12-pca-VI/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/12-pca-VI/marked.pdf"
+                        }
+                    }
+                },
+                "13-laplacian_eigenmaps-I": {
+                    "metadata": {
+                        "date": "2023-05-01",
+                        "number": 13,
+                        "topic": "Laplacian Eigenmaps I",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/13-laplacian_eigenmaps-I/slides.pdf"
+                        }
+                    }
+                },
+                "14-laplacian_eigenmaps-II": {
+                    "metadata": {
+                        "date": "2023-05-03",
+                        "number": 14,
+                        "topic": "Laplacian Eigenmaps II",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/14-laplacian_eigenmaps-II/slides.pdf"
+                        }
+                    }
+                },
+                "15-laplacian_eigenmaps-III": {
+                    "metadata": {
+                        "date": "2023-05-08",
+                        "number": 15,
+                        "topic": "Laplacian Eigenmaps III",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/15-laplacian_eigenmaps-III/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/15-laplacian_eigenmaps-III/marked.pdf"
+                        }
+                    }
+                },
+                "16-linear_models-I": {
+                    "metadata": {
+                        "date": "2023-05-10",
+                        "number": 16,
+                        "topic": "Linear Models",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/16-linear_models-I/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/16-linear_models-I/marked.pdf"
+                        }
+                    }
+                },
+                "17-basis_functions": {
+                    "metadata": {
+                        "date": "2023-05-12",
+                        "number": 17,
+                        "topic": "Feature Maps",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/17-basis_functions/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/17-basis_functions/marked.pdf"
+                        }
+                    }
+                },
+                "18-rbf_networks": {
+                    "metadata": {
+                        "date": "2023-05-15",
+                        "number": 18,
+                        "topic": "RBF Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/18-rbf_networks/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/18-rbf_networks/marked.pdf"
+                        }
+                    }
+                },
+                "19-neural_networks": {
+                    "metadata": {
+                        "date": "2023-05-17",
+                        "number": 19,
+                        "topic": "Neural Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/19-neural_networks/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/19-neural_networks/marked.pdf"
+                        }
+                    }
+                },
+                "20-backprop": {
+                    "metadata": {
+                        "date": "2023-05-19",
+                        "number": 20,
+                        "topic": "Backpropagation",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/20-backprop/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/20-backprop/marked.pdf"
+                        }
+                    }
+                },
+                "21-sgd": {
+                    "metadata": {
+                        "date": "2023-05-22",
+                        "number": 21,
+                        "topic": "SGD",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/21-sgd/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/21-sgd/marked.pdf"
+                        }
+                    }
+                },
+                "22-convolutions": {
+                    "metadata": {
+                        "date": "2023-05-24",
+                        "number": 22,
+                        "topic": "Convolutions",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/22-convolutions/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/22-convolutions/marked.pdf"
+                        }
+                    }
+                },
+                "23-cnn": {
+                    "metadata": {
+                        "date": "2023-05-31",
+                        "number": 23,
+                        "topic": "Convolutional Neural Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/23-cnn/slides.pdf"
+                        },
+                        "marked.pdf": {
+                            "path": "lectures/schedules/mwf/23-cnn/marked.pdf"
+                        }
+                    }
+                },
+                "24-autoencoders": {
+                    "metadata": {
+                        "date": "2023-06-05",
+                        "number": 24,
+                        "topic": "Autoencoders",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/schedules/mwf/24-autoencoders/slides.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "homeworks": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "homework.pdf",
+                    "solution.pdf",
+                    "template.zip"
+                ],
+                "optional_artifacts": [
+                    "starter_code.zip"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-linear_transformations": {
+                    "metadata": {
+                        "due": "2023-04-12 23:59:00",
+                        "released": "2023-04-04 00:00:00",
+                        "number": 1,
+                        "topic": "Linear Transformations"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/01-linear_transformations/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/01-linear_transformations/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/01-linear_transformations/template.zip"
+                        }
+                    }
+                },
+                "02-matrices_and_eigenvectors": {
+                    "metadata": {
+                        "due": "2023-04-19 23:59:00",
+                        "released": "2023-04-11 00:00:00",
+                        "number": 2,
+                        "topic": "Eigenvectors"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/02-matrices_and_eigenvectors/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/02-matrices_and_eigenvectors/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/02-matrices_and_eigenvectors/template.zip"
+                        }
+                    }
+                },
+                "03-pca-I": {
+                    "metadata": {
+                        "due": "2023-04-26 23:59:00",
+                        "released": "2023-04-18 00:00:00",
+                        "number": 3,
+                        "topic": "PCA"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/03-pca-I/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/03-pca-I/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/03-pca-I/template.zip"
+                        }
+                    }
+                },
+                "04-pca-II": {
+                    "metadata": {
+                        "due": "2023-05-03 23:59:00",
+                        "released": "2023-04-25 00:00:00",
+                        "number": 4,
+                        "topic": "PCA"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/04-pca-II/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/04-pca-II/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/04-pca-II/template.zip"
+                        }
+                    }
+                },
+                "05-eigenmaps": {
+                    "metadata": {
+                        "due": "2023-05-10 23:59:00",
+                        "released": "2023-05-02 00:00:00",
+                        "number": 5,
+                        "topic": "Laplacian Eigenmaps"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/05-eigenmaps/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/05-eigenmaps/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/05-eigenmaps/template.zip"
+                        }
+                    }
+                },
+                "06-basis_functions": {
+                    "metadata": {
+                        "due": "2023-05-17 23:59:00",
+                        "released": "2023-05-09 00:00:00",
+                        "number": 6,
+                        "topic": "Basis Functions"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/06-basis_functions/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/06-basis_functions/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/06-basis_functions/template.zip"
+                        }
+                    }
+                },
+                "07-neural_networks": {
+                    "metadata": {
+                        "due": "2023-05-24 23:59:00",
+                        "released": "2023-05-16 00:00:00",
+                        "number": 7,
+                        "topic": "Neural Networks"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/07-neural_networks/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/07-neural_networks/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/07-neural_networks/template.zip"
+                        }
+                    }
+                },
+                "08-neural_networks-II": {
+                    "metadata": {
+                        "due": "2023-05-31 23:59:00",
+                        "released": "2023-05-23 00:00:00",
+                        "number": 8,
+                        "topic": "Neural Networks"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/08-neural_networks-II/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/08-neural_networks-II/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/08-neural_networks-II/template.zip"
+                        }
+                    }
+                },
+                "09-super_hw": {
+                    "metadata": {
+                        "due": "2023-06-14 23:59:00",
+                        "released": "2023-06-02 21:00:00",
+                        "number": 9,
+                        "topic": "Super Homework"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/09-super_hw/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/09-super_hw/template.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "discussions": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "notebook",
+                    "solution-notebook"
+                ],
+                "optional_artifacts": [
+                    "worksheet.pdf",
+                    "solution-worksheet.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "zoom": {
+                            "type": "string"
+                        }
+                    },
+                    "required_keys": {
+                        "recording": {
+                            "nullable": true,
+                            "type": "string"
+                        },
+                        "release_time": {
+                            "type": "datetime"
+                        },
+                        "datetime": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-linear_algebra": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-04-09 18:00:00",
+                        "datetime": "2023-04-10 18:00:00",
+                        "number": 1
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "discussions/01-linear_algebra/notebook"
+                        },
+                        "solution-notebook": {
+                            "path": "discussions/01-linear_algebra/solution-notebook"
+                        }
+                    }
+                },
+                "02-eigenvectors": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-04-16 18:00:00",
+                        "datetime": "2023-04-17 18:00:00",
+                        "number": 2
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "discussions/02-eigenvectors/notebook"
+                        },
+                        "solution-notebook": {
+                            "path": "discussions/02-eigenvectors/solution-notebook"
+                        }
+                    }
+                },
+                "03-pca": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-04-23 18:00:00",
+                        "datetime": "2023-04-24 18:00:00",
+                        "number": 3
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "discussions/03-pca/notebook"
+                        },
+                        "solution-notebook": {
+                            "path": "discussions/03-pca/solution-notebook"
+                        }
+                    }
+                },
+                "04-midterm_review": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-05-01 18:00:00",
+                        "datetime": "2023-05-01 18:00:00",
+                        "number": 4
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/04-midterm_review/worksheet.pdf"
+                        },
+                        "solution-worksheet.pdf": {
+                            "path": "discussions/04-midterm_review/solution-worksheet.pdf"
+                        }
+                    }
+                },
+                "05-spectral_clustering": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-05-07 18:00:00",
+                        "datetime": "2023-05-08 18:00:00",
+                        "number": 5
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "discussions/05-spectral_clustering/notebook"
+                        },
+                        "solution-notebook": {
+                            "path": "discussions/05-spectral_clustering/solution-notebook"
+                        }
+                    }
+                },
+                "06-kmeans_rbf": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-05-14 18:00:00",
+                        "datetime": "2023-05-15 18:00:00",
+                        "number": 6,
+                        "zoom": "https://ucsd.zoom.us/j/95925565456"
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "discussions/06-kmeans_rbf/notebook"
+                        },
+                        "solution-notebook": {
+                            "path": "discussions/06-kmeans_rbf/solution-notebook"
+                        }
+                    }
+                },
+                "07-tensorflow": {
+                    "metadata": {
+                        "recording": null,
+                        "release_time": "2023-05-21 18:00:00",
+                        "datetime": "2023-05-22 18:00:00",
+                        "number": 7,
+                        "zoom": "https://ucsd.zoom.us/j/95925565456"
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "discussions/07-tensorflow/notebook"
+                        },
+                        "solution-notebook": {
+                            "path": "discussions/07-tensorflow/solution-notebook"
+                        }
+                    }
+                }
+            }
+        },
+        "labs": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "number": {
+                            "type": "integer"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-linear_algebra": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2023-04-04 00:00:00",
+                        "ready": true,
+                        "due": "2023-04-09 23:59:00",
+                        "topic": "Time Complexity Analysis"
+                    },
+                    "artifacts": {}
+                },
+                "02-eigenvectors": {
+                    "metadata": {
+                        "number": 2,
+                        "released": "2023-04-11 00:00:00",
+                        "ready": true,
+                        "due": "2023-04-16 23:59:00",
+                        "topic": "Eigenvectors"
+                    },
+                    "artifacts": {}
+                },
+                "03-pca-I": {
+                    "metadata": {
+                        "number": 3,
+                        "released": "2023-04-18 00:00:00",
+                        "ready": true,
+                        "due": "2023-04-23 23:59:00",
+                        "topic": "PCA"
+                    },
+                    "artifacts": {}
+                },
+                "04-pca-II": {
+                    "metadata": {
+                        "number": 4,
+                        "released": "2023-04-25 00:00:00",
+                        "ready": true,
+                        "due": "2023-04-30 23:59:00",
+                        "topic": "PCA"
+                    },
+                    "artifacts": {}
+                },
+                "05-laplacian_eigenmaps": {
+                    "metadata": {
+                        "number": 5,
+                        "released": "2023-05-02 00:00:00",
+                        "ready": true,
+                        "due": "2023-05-07 23:59:00",
+                        "topic": "Laplacian Eigenmaps"
+                    },
+                    "artifacts": {}
+                },
+                "06-feature_maps": {
+                    "metadata": {
+                        "number": 6,
+                        "released": "2023-05-09 00:00:00",
+                        "ready": true,
+                        "due": "2023-05-14 23:59:00",
+                        "topic": "Linear Predictors and Basis Functions"
+                    },
+                    "artifacts": {}
+                },
+                "07-nns": {
+                    "metadata": {
+                        "number": 7,
+                        "released": "2023-05-16 00:00:00",
+                        "ready": true,
+                        "due": "2023-05-21 23:59:00",
+                        "topic": "Neural Networks"
+                    },
+                    "artifacts": {}
+                },
+                "08-backprop": {
+                    "metadata": {
+                        "number": 8,
+                        "released": "2023-05-23 00:00:00",
+                        "ready": true,
+                        "due": "2023-05-28 23:59:00",
+                        "topic": "Neural Networks II"
+                    },
+                    "artifacts": {}
+                },
+                "09-cnns": {
+                    "metadata": {
+                        "number": 9,
+                        "released": "2023-06-02 00:00:00",
+                        "ready": true,
+                        "due": "2023-06-11 23:59:00",
+                        "topic": "CNNs"
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "default": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {}
+        }
+    }
+}

@@ -1,0 +1,51 @@
+01-intro/build/lecture.pdf:
+  description: 'Learning via Optimization, pt. I: Intro'
+01-intro/marked.pdf: null
+02-median/build/lecture.pdf:
+  description: 'Learning via Optimization, pt. II: The Median'
+02-median/marked.pdf: null
+03-mean/build/lecture.pdf:
+  description: 'Learning via Optimization, pt. III: The Mean'
+03-mean/marked.pdf: null
+04-gradient_descent/build/lecture.pdf:
+  description: 'Learning via Optimization, pt. IV: Gradient Descent'
+04-gradient_descent/marked.pdf: null
+05-convexity/build/lecture.pdf:
+  description: 'Learning via Optimization, pt. V: Convexity'
+05-convexity/marked.pdf: null
+06-regression-I/build/lecture.pdf:
+  description: 'Least Squares Regression, pt. I: Set-Up'
+06-regression-I/marked.pdf: null
+07-regression-II/build/lecture.pdf:
+  description: 'Least Squares Regression, pt. II: Solutions'
+07-regression-II/marked.pdf: null
+08-linear_algebra/build/lecture.pdf:
+  description: 'Least Squares Regression, pt. III: Linear Algebra'
+08-linear_algebra/marked.pdf: null
+09-gradient/build/lecture.pdf:
+  description: 'Least Squares Regression, pt IV: Gradient and Normal Equations'
+09-gradient/marked.pdf: null
+10-multiple_regression/build/lecture.pdf:
+  description: 'Least Squares Regression, pt V: Non-Linear Trends and Classification'
+10-multiple_regression/marked.pdf: null
+11-perceptron/build/lecture.pdf:
+  description: Perceptrons
+11-perceptron/marked.pdf: null
+12-probability/build/lecture.pdf:
+  description: Probability
+12-probability/marked.pdf: null
+13-combinatorics/build/lecture.pdf:
+  description: Combinatorics
+13-combinatorics/marked.pdf: null
+14-conditional/build/lecture.pdf:
+  description: Conditional Probability
+14-conditional/marked.pdf: null
+15-independence/build/lecture.pdf:
+  description: Independence
+15-independence/marked.pdf: null
+16-naive_bayes-I/build/lecture.pdf:
+  description: Naive Bayes, pt. I
+16-naive_bayes-I/marked.pdf: null
+17-naive_bayes-II/build/lecture.pdf:
+  description: Naive Bayes, pt. II
+17-naive_bayes-II/marked.pdf: null

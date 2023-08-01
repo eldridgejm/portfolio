@@ -1,0 +1,999 @@
+{
+    "collections": {
+        "lectures/schedules/tr": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "notebook"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "note": {
+                            "type": "string"
+                        }
+                    },
+                    "required_keys": {
+                        "videos": {
+                            "nullable": true,
+                            "type": "list",
+                            "element_schema": {
+                                "type": "dict",
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "reading": {
+                            "nullable": true,
+                            "type": "dict",
+                            "required_keys": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "videos": null,
+                        "number": 1,
+                        "date": "2022-09-22",
+                        "topic": "Introduction",
+                        "reading": {
+                            "title": "Chapter 1 - Introduction to Data Science",
+                            "url": "http://notes.dsc80.com/content/01/introduction.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/01-intro/notebook"
+                        }
+                    }
+                },
+                "02-pandas": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Tabular Data in Pandas (Spring 21 Version)",
+                                "url": "https://youtu.be/W-txew6nx8s"
+                            },
+                            {
+                                "title": "Pandas and Numpy (Spring 21 Version)",
+                                "url": "https://youtu.be/q2BhOaUdqsI"
+                            },
+                            {
+                                "title": "Useful Pandas Methods (Spring 21 Version)",
+                                "url": "https://youtu.be/r1Vc7hk-Zis"
+                            }
+                        ],
+                        "number": 2,
+                        "date": "2022-09-27",
+                        "topic": "Pandas",
+                        "reading": {
+                            "title": "Chapter 2 - Tabular Data",
+                            "url": "https://notes.dsc80.com/content/02/introduction.html"
+                        },
+                        "note": "<p style=\"font-size: 10pt\">\n    The microphone unfortunately stopped working partway through\n    this quarter's podcast recording, so we've uploaded\n    videos from a previous quarter instead. They cover\n    the same material as what was discussed in Lecture.\n</p>"
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/02-pandas/notebook"
+                        }
+                    }
+                },
+                "03-messy_data": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Messy Data",
+                                "url": "https://youtu.be/wOBjoxBJVlI?t=259"
+                            },
+                            {
+                                "title": "Kinds of Data",
+                                "url": "https://youtu.be/wOBjoxBJVlI?t=949"
+                            },
+                            {
+                                "title": "Unfaithful data",
+                                "url": "https://youtu.be/wOBjoxBJVlI?t=3046"
+                            },
+                            {
+                                "title": "Missing Values",
+                                "url": "https://youtu.be/wOBjoxBJVlI?t=4109"
+                            }
+                        ],
+                        "number": 3,
+                        "date": "2022-09-29",
+                        "topic": "Messy Data",
+                        "reading": {
+                            "title": "Chapter 4 - Understanding Assumptions and Data Cleaning",
+                            "url": "https://notes.dsc80.com/content/04/introduction.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/03-messy_data/notebook"
+                        }
+                    }
+                },
+                "04-hypothesis_testing": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Hypothesis Testing",
+                                "url": "https://youtu.be/Ty5KQzNUPFw?t=364"
+                            },
+                            {
+                                "title": "Efficiency",
+                                "url": "https://youtu.be/Ty5KQzNUPFw?t=2129"
+                            },
+                            {
+                                "title": "TVD",
+                                "url": "https://youtu.be/Ty5KQzNUPFw?t=2537"
+                            },
+                            {
+                                "title": "Example of penguins",
+                                "url": "https://youtu.be/Ty5KQzNUPFw?t=3959"
+                            }
+                        ],
+                        "number": 4,
+                        "date": "2022-10-04",
+                        "topic": "Hypothesis Testing",
+                        "reading": {
+                            "title": "Chapter 4.4 - Hypothesis Testing",
+                            "url": "http://notes.dsc80.com/content/04/asking-questions.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/04-hypothesis_testing/notebook"
+                        }
+                    }
+                },
+                "05-grouping": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Data Granularity and groupby",
+                                "url": "https://youtu.be/nGK66i6I9NA"
+                            },
+                            {
+                                "title": "Pivot Tables",
+                                "url": "https://youtu.be/DZU_2e29mMs"
+                            },
+                            {
+                                "title": "Simpson's Paradox",
+                                "url": "https://youtu.be/gW4RUashlDg"
+                            }
+                        ],
+                        "number": 6,
+                        "date": "2022-10-11",
+                        "topic": "Grouping",
+                        "reading": {
+                            "title": "Chapter 5 - Aggregations",
+                            "url": "https://notes.dsc80.com/content/05/introduction.html"
+                        },
+                        "note": "<p style=\"font-size: 10pt\">\n    Once again, the microphone unfortunately stopped working partway through\n    this quarter's podcast recording, so we've uploaded\n    videos from a previous quarter instead. They cover\n    the same material as what was discussed in Lecture.\n    I'm checking with campus IT to find out what the issue is.\n</p>"
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/05-grouping/notebook"
+                        }
+                    }
+                },
+                "06-combining": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Working with Times",
+                                "url": "https://youtu.be/gxYY66OzH6g"
+                            },
+                            {
+                                "title": "Concatenating Horizontally",
+                                "url": "https://youtu.be/7oW3gJG8rDo"
+                            },
+                            {
+                                "title": "Joining with pd.merge",
+                                "url": "https://youtu.be/8J4DNMOMnRw"
+                            },
+                            {
+                                "title": "Many-to-* Joins, and a Demo",
+                                "url": "https://youtu.be/5Iumi9F1RZk"
+                            }
+                        ],
+                        "number": 7,
+                        "date": "2022-10-13",
+                        "topic": "Combining",
+                        "reading": {
+                            "title": "Chapter 5 - Aggregations",
+                            "url": "https://notes.dsc80.com/content/05/introduction.html"
+                        },
+                        "note": "<p style=\"font-size: 10pt\">\n    The podcast system is clearly having problems, as the audio <i>once\n    again</i> stopped partway through the lecture. Posted above are old\n    videos. I'll send <i>another</i> email to tech support. Sorry\n    for the inconvenience.\n</p>"
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/06-combining/notebook"
+                        }
+                    }
+                },
+                "07-permutation": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Permutation Test",
+                                "url": "https://youtu.be/MOdvSw6leDU?t=216"
+                            },
+                            {
+                                "title": "Difference Between Categorical Distributions",
+                                "url": "https://youtu.be/MOdvSw6leDU?t=2526"
+                            },
+                            {
+                                "title": "Speeding Things Up",
+                                "url": "https://youtu.be/MOdvSw6leDU?t=3521"
+                            }
+                        ],
+                        "number": 8,
+                        "date": "2022-10-18",
+                        "topic": "Permutation Testing",
+                        "reading": {
+                            "title": "Chapter 5.5 - Permutation Tests",
+                            "url": "https://notes.dsc80.com/content/05/permutation-tests.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/07-permutation/notebook"
+                        }
+                    }
+                },
+                "08-missingness": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Missing Data",
+                                "url": "https://youtu.be/W-2ZbCa9ylM?t=335"
+                            },
+                            {
+                                "title": "Assessing missingness through data",
+                                "url": "https://youtu.be/W-2ZbCa9ylM?t=2566"
+                            },
+                            {
+                                "title": "The Kolmogorov-Smirnov test statistic",
+                                "url": "https://youtu.be/W-2ZbCa9ylM?t=4020"
+                            }
+                        ],
+                        "number": 9,
+                        "date": "2022-10-20",
+                        "topic": "Missing Data",
+                        "reading": {
+                            "title": "Chapter 5 - Missing Data",
+                            "url": "https://notes.dsc80.com/content/06/introduction.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/08-missingness/notebook"
+                        }
+                    }
+                },
+                "09-imputation": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Handling missing values",
+                                "url": "https://youtu.be/bp5rEyBhyvg?t=862"
+                            },
+                            {
+                                "title": "Mean Imputation",
+                                "url": "https://youtu.be/bp5rEyBhyvg?t=1465"
+                            },
+                            {
+                                "title": "Probabilistic imputation",
+                                "url": "https://youtu.be/bp5rEyBhyvg?t=2839"
+                            },
+                            {
+                                "title": "Summary",
+                                "url": "https://youtu.be/bp5rEyBhyvg?t=3633"
+                            }
+                        ],
+                        "number": 10,
+                        "date": "2022-10-25",
+                        "topic": "Imputing Values",
+                        "reading": {
+                            "title": "Chapter 6 - Missing Data",
+                            "url": "https://notes.dsc80.com/content/06/handling-missing-data.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/09-imputation/notebook"
+                        }
+                    }
+                },
+                "10-http": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "HTTP",
+                                "url": "https://youtu.be/qvAN5o6Y_N0?t=569"
+                            },
+                            {
+                                "title": "Making HTTP Request",
+                                "url": "https://youtu.be/qvAN5o6Y_N0?t=1357"
+                            },
+                            {
+                                "title": "API and Scraping",
+                                "url": "https://youtu.be/qvAN5o6Y_N0?t=3011"
+                            }
+                        ],
+                        "number": 11,
+                        "date": "2022-10-27",
+                        "topic": "HTTP",
+                        "reading": {
+                            "title": "Chapter 7 - Collecting Data",
+                            "url": "https://notes.dsc80.com/content/07/introduction.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/10-http/notebook"
+                        }
+                    }
+                },
+                "11-parsing_html": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Parsing HTML",
+                                "url": "https://youtu.be/zGWYyvrgx2w?t=365"
+                            },
+                            {
+                                "title": "Parsing HTML Via Beautiful Soup",
+                                "url": "https://youtu.be/zGWYyvrgx2w?t=1478"
+                            },
+                            {
+                                "title": "Example - Get the Seminars and Their Dates",
+                                "url": "https://youtu.be/t9VLJiypjVc?t=1229"
+                            },
+                            {
+                                "title": "Example - Scraping Quotes",
+                                "url": "https://www.youtube.com/watch?v=LSBcvPDIhwA&list=PLQWIvzQky-s7qdFkIQh-NS25D4fmowHUq&index=42"
+                            }
+                        ],
+                        "number": 12,
+                        "date": "2022-11-01",
+                        "topic": "Parsing HTML",
+                        "reading": {
+                            "title": "Chapter 7 - Collecting Data",
+                            "url": "https://notes.dsc80.com/content/07/introduction.html"
+                        },
+                        "note": "<p style=\"font-size: 10pt\">\n    The last two sections of the lecture don't have sound so I just put the video\n    from previous quarter. Noted that instead of scraping the HDSI Faculty page, the previous lecture is about \n    getting the seminars and their dates. \n</p>"
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/11-parsing_html/notebook"
+                        }
+                    }
+                },
+                "12-regex": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Working with Texts",
+                                "url": "https://youtu.be/NUF0NzYsAsk?t=123"
+                            },
+                            {
+                                "title": "Basic Regular Expression",
+                                "url": "https://youtu.be/NUF0NzYsAsk?t=1204"
+                            },
+                            {
+                                "title": "Intermediate Regrex",
+                                "url": "https://youtu.be/NUF0NzYsAsk?t=2537"
+                            },
+                            {
+                                "title": "Regex in Python",
+                                "url": "https://youtu.be/NUF0NzYsAsk?t=4223"
+                            },
+                            {
+                                "title": "Log Parsing",
+                                "url": "https://youtu.be/NUF0NzYsAsk?t=4507"
+                            }
+                        ],
+                        "number": 13,
+                        "date": "2022-11-08",
+                        "topic": "Working with Text",
+                        "reading": {
+                            "title": "Chapter 8 - Information Extraction",
+                            "url": "https://notes.dsc80.com/content/08/patterns.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/12-regex/notebook"
+                        }
+                    }
+                },
+                "13-text_features": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Text Features",
+                                "url": "https://youtu.be/wlWo7T1RSXM?t=167"
+                            },
+                            {
+                                "title": "Bag of Words",
+                                "url": "https://youtu.be/wlWo7T1RSXM?t=1359"
+                            },
+                            {
+                                "title": "TF-IDF",
+                                "url": "https://youtu.be/wlWo7T1RSXM?t=3294"
+                            },
+                            {
+                                "title": "State of the Union Addresses",
+                                "url": "https://youtu.be/wlWo7T1RSXM?t=4349"
+                            }
+                        ],
+                        "number": 14,
+                        "date": "2022-11-10",
+                        "topic": "Text Features",
+                        "reading": {
+                            "title": "Chapter 8 - Information Extraction",
+                            "url": "https://notes.dsc80.com/content/08/nlp.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/13-text_features/notebook"
+                        }
+                    }
+                },
+                "14-features": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Features",
+                                "url": "https://youtu.be/7044833hx1M?t=147"
+                            },
+                            {
+                                "title": "Example - Predicting Child Heights",
+                                "url": "https://youtu.be/7044833hx1M?t=594"
+                            },
+                            {
+                                "title": "Feature Engineering",
+                                "url": "https://youtu.be/7044833hx1M?t=3052"
+                            },
+                            {
+                                "title": "Modeling",
+                                "url": "https://youtu.be/7044833hx1M?t=4004"
+                            }
+                        ],
+                        "number": 15,
+                        "date": "2022-11-15",
+                        "topic": "Features",
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Features",
+                            "url": "https://notes.dsc80.com/content/09/introduction.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/14-features/notebook"
+                        }
+                    }
+                },
+                "15-pipelines": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Sklearn Pipelines",
+                                "url": "https://youtu.be/Vaivzv7b28M?t=357"
+                            },
+                            {
+                                "title": "Building ML Models Using Sklearn",
+                                "url": "https://youtu.be/Vaivzv7b28M?t=590"
+                            },
+                            {
+                                "title": "Transformers in Sklearn",
+                                "url": "https://youtu.be/Vaivzv7b28M?t=776"
+                            },
+                            {
+                                "title": "Models in Sklearn",
+                                "url": "https://youtu.be/Vaivzv7b28M?t=1810"
+                            }
+                        ],
+                        "number": 16,
+                        "date": "2022-11-17",
+                        "topic": "sklearn Pipelines",
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Features",
+                            "url": "https://notes.dsc80.com/content/09/data-pipelines.html"
+                        }
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/15-pipelines/notebook"
+                        }
+                    }
+                },
+                "16-bias_and_variance": {
+                    "metadata": {
+                        "videos": [
+                            {
+                                "title": "Model Validation",
+                                "url": "https://youtu.be/aYw2JivFTqo"
+                            },
+                            {
+                                "title": "Example: Polynomial Regression",
+                                "url": "https://youtu.be/6jFYeQp28Ag"
+                            },
+                            {
+                                "title": "Example: Decision Trees",
+                                "url": "https://youtu.be/Rg_cQ_7f_6Y"
+                            }
+                        ],
+                        "number": 17,
+                        "date": "2022-11-22",
+                        "topic": "Model Validation",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/16-bias_and_variance/notebook"
+                        }
+                    }
+                },
+                "17-grid_search_and_metrics": {
+                    "metadata": {
+                        "videos": null,
+                        "number": 18,
+                        "date": "2022-11-29",
+                        "topic": "Grid Search and Evaluation Metrics",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "notebook": {
+                            "path": "lectures/schedules/tr/17-grid_search_and_metrics/notebook"
+                        }
+                    }
+                },
+                "guest-lecture": {
+                    "metadata": {
+                        "videos": null,
+                        "number": 5,
+                        "date": "2022-10-06",
+                        "topic": "Guest Lecture by Eric Colson",
+                        "reading": null,
+                        "note": "<small>\nThe guest lecture can be viewed on <a href=\"http://podcast.ucsd.edu\">podcast.ucsd.edu</a>.\nThe first few minutes don't have sound because the microphone was off.\n</small>"
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "projects": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "assignment"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "type": "dict",
+                    "required_keys": {
+                        "number": {
+                            "type": "integer"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "checkpoint_released": {
+                            "type": "datetime"
+                        },
+                        "checkpoint_due": {
+                            "nullable": true,
+                            "type": "datetime"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-gradebook": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2022-10-06 23:59:00",
+                        "topic": "The Other Side of Gradescope",
+                        "checkpoint_released": "2022-09-29 23:59:00",
+                        "checkpoint_due": "2022-10-06 23:59:00",
+                        "due": "2022-10-13 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "projects/01-gradebook/assignment"
+                        }
+                    }
+                },
+                "02-covid_vax": {
+                    "metadata": {
+                        "number": 2,
+                        "released": "2022-10-21 23:59:00",
+                        "topic": "COVID-19 Vaccine Effectiveness",
+                        "checkpoint_released": "2022-10-13 23:59:00",
+                        "checkpoint_due": "2022-10-20 23:59:00",
+                        "due": "2022-10-27 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "projects/02-covid_vax/assignment"
+                        }
+                    }
+                },
+                "03-topic": {
+                    "metadata": {
+                        "number": 3,
+                        "released": "2022-10-28 00:00:00",
+                        "topic": "Exploratory Data Analysis",
+                        "checkpoint_released": "2022-10-28 00:00:00",
+                        "checkpoint_due": null,
+                        "due": "2022-11-10 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "projects/03-topic/assignment"
+                        }
+                    }
+                },
+                "04-language_models": {
+                    "metadata": {
+                        "number": 4,
+                        "released": "2022-11-18 23:59:00",
+                        "topic": "Language Models",
+                        "checkpoint_released": "2022-11-10 23:59:00",
+                        "checkpoint_due": "2022-11-17 23:59:00",
+                        "due": "2022-11-28 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "projects/04-language_models/assignment"
+                        }
+                    }
+                },
+                "05-topic-II": {
+                    "metadata": {
+                        "number": 5,
+                        "released": "2022-11-23 00:00:00",
+                        "topic": "Topic Projects, Part II",
+                        "checkpoint_released": "2022-11-23 00:00:00",
+                        "checkpoint_due": null,
+                        "due": "2022-12-07 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "projects/05-topic-II/assignment"
+                        }
+                    }
+                }
+            }
+        },
+        "discussions": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "assignment"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "type": "dict",
+                    "required_keys": {
+                        "topic": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "topic": "Introduction",
+                        "date": "2022-09-30 15:00:00",
+                        "number": 1,
+                        "due": "2022-10-01 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/01-intro/assignment"
+                        }
+                    }
+                },
+                "02-pandas": {
+                    "metadata": {
+                        "topic": "Pandas",
+                        "date": "2022-10-07 15:00:00",
+                        "number": 2,
+                        "due": "2022-10-08 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/02-pandas/assignment"
+                        }
+                    }
+                },
+                "03-hyp-testing-combining-df": {
+                    "metadata": {
+                        "topic": "Plotting",
+                        "date": "2022-10-14 15:00:00",
+                        "number": 3,
+                        "due": "2022-10-15 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/03-hyp-testing-combining-df/assignment"
+                        }
+                    }
+                },
+                "04-combining_df": {
+                    "metadata": {
+                        "topic": "Combining DataFrames",
+                        "date": "2022-10-21 15:00:00",
+                        "number": 4,
+                        "due": "2022-10-22 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/04-combining_df/assignment"
+                        }
+                    }
+                },
+                "04-visualization": {
+                    "metadata": {
+                        "topic": "Combining DataFrames",
+                        "date": "2022-10-28 15:00:00",
+                        "number": 5,
+                        "due": "2022-10-29 23:59:00"
+                    },
+                    "artifacts": {}
+                },
+                "05-midterm-review": {
+                    "metadata": {
+                        "topic": "Midterm Review",
+                        "date": "2022-11-04 15:00:00",
+                        "number": 6,
+                        "due": "2022-11-05 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/05-midterm-review/assignment"
+                        }
+                    }
+                },
+                "06-scraping": {
+                    "metadata": {
+                        "topic": "Plotting",
+                        "date": "2022-11-11 15:00:00",
+                        "number": 6,
+                        "due": "2022-11-12 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/06-scraping/assignment"
+                        }
+                    }
+                },
+                "07-regex-nlp": {
+                    "metadata": {
+                        "topic": "Plotting",
+                        "date": "2022-11-18 15:00:00",
+                        "number": 7,
+                        "due": "2022-11-19 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "discussions/07-regex-nlp/assignment"
+                        }
+                    }
+                },
+                "08-sklearn": {
+                    "metadata": {
+                        "topic": "sklearn",
+                        "date": "2021-11-19 00:00:00",
+                        "number": 8,
+                        "due": "2021-11-20 23:59:00"
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "labs": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "assignment"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "type": "dict",
+                    "required_keys": {
+                        "topic": {
+                            "type": "string"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "topic": "Introduction",
+                        "released": "2022-09-26 23:59:00",
+                        "number": 1,
+                        "due": "2022-10-03 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/01-intro/assignment"
+                        }
+                    }
+                },
+                "02-pandas": {
+                    "metadata": {
+                        "topic": "Pandas",
+                        "released": "2022-10-03 23:59:00",
+                        "number": 2,
+                        "due": "2022-10-10 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/02-pandas/assignment"
+                        }
+                    }
+                },
+                "03-hyp-dataframes": {
+                    "metadata": {
+                        "topic": "Hypothesis Testing",
+                        "released": "2022-10-10 23:59:00",
+                        "number": 3,
+                        "due": "2022-10-17 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/03-hyp-dataframes/assignment"
+                        }
+                    }
+                },
+                "04-pivot-perm-missing": {
+                    "metadata": {
+                        "topic": "Hypothesis Testing",
+                        "released": "2022-10-17 23:59:00",
+                        "number": 4,
+                        "due": "2022-10-24 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/04-pivot-perm-missing/assignment"
+                        }
+                    }
+                },
+                "05-imputation": {
+                    "metadata": {
+                        "topic": "Missingness and Imputation",
+                        "released": "2022-10-24 23:59:00",
+                        "number": 5,
+                        "due": "2022-10-31 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/05-imputation/assignment"
+                        }
+                    }
+                },
+                "06-http": {
+                    "metadata": {
+                        "topic": "HTTP and HTML",
+                        "released": "2022-10-31 23:59:00",
+                        "number": 6,
+                        "due": "2022-11-07 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/06-http/assignment"
+                        }
+                    }
+                },
+                "07-regex": {
+                    "metadata": {
+                        "topic": "Regex",
+                        "released": "2022-11-07 23:59:00",
+                        "number": 7,
+                        "due": "2022-11-14 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/07-regex/assignment"
+                        }
+                    }
+                },
+                "08-features": {
+                    "metadata": {
+                        "topic": "Features",
+                        "released": "2022-11-14 23:59:00",
+                        "number": 8,
+                        "due": "2022-11-21 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/08-features/assignment"
+                        }
+                    }
+                },
+                "09-sklearn": {
+                    "metadata": {
+                        "topic": "Sklearn",
+                        "released": "2022-11-21 23:59:00",
+                        "number": 9,
+                        "due": "2022-12-01 23:59:00"
+                    },
+                    "artifacts": {
+                        "assignment": {
+                            "path": "labs/09-sklearn/assignment"
+                        }
+                    }
+                }
+            }
+        },
+        "default": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {}
+        }
+    }
+}

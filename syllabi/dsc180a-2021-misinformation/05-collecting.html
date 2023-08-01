@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>DSC 180</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 180</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><span class="">Home</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/c/GF415D4B3/feed"><span class="">Campuswire</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+
+                        <div class="site-title">
+                            <h1>DSC 180 &ndash; The Spread of Misinformation Online</h1>
+                            <hr>
+                        </div>
+
+
+                        <h1 id="week-05-collecting-the-data">Week 05 - Collecting the Data</h1>
+<h2 id="topics">Topics</h2>
+<p>This week, we'll collect a massive data set of ~2 million tweets on COVID.</p>
+<h3 id="readings-and-tasks">Readings and Tasks</h3>
+<p>To study the spread of misinformation about COVID-19, we'll gather a collection
+of around 2 million tweets. The <a href="http://www.panacealab.org/covid19/">Panacea
+Lab</a> at Georgia State University has been
+collecting tweets about the coronavirus since the beginning of the pandemic.
+These tweets are provided in the form of Tweet ID, and it is up to us to
+"rehydrate" the tweets.</p>
+<p>The Panacea Lab attempts to collect <em>every</em> tweet about COVID. As a result,
+the full data set contains, on average, 4.4 million tweets <em>per day</em>. This is
+way too many tweets for us, so we will need to choose a random subset of them to
+hydrate. When doing so, you should sample <em>uniformly at random</em>, and as a result
+the distribution of tweet dates in your sampled data should be about the same as
+the population distribution.</p>
+<p>There are two tasks this week, each very open-ended in that you'll need to make
+some decisions on how to fill in the details in a reasonable way:</p>
+<ol>
+<li>Hydrate a data set of (roughly) 2 million tweets from the period of February
+   15, 2020 to October 10, 2021. The only constraints are that you 1) use the
+   "normal" data (as opposed to the "clean" data), as it includes re-tweets, and
+   2) you sample uniformly at random.</li>
+<li>Once you have your data set of 2 million tweets, estimate the proportion of
+   them that contain links (URLs).</li>
+</ol>
+<p>These tasks might be harder than they first appear! Even getting the tweet IDs
+involves a few challenges. For instance, you could get them from the GitHub repo
+provided by the Panacea Lab, but they are broken into daily files -- you'd need
+to write a script to download each of them one-at-a-time and sample.
+Alternatively, you could download the <em>entire</em> data set of tweet IDs (the
+Panacea Lab provides a few links), but it is a single 10 GB file that may not
+fit in your computer's memory.</p>
+<p>Make your best effort at completing this by Wednesday. When we meet, we'll
+discuss the challenges you might have faced and talk about possible solutions.</p>
+<p>For this week's participation, we'll use the "default" participation questions
+for a task.</p>
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

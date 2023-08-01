@@ -1,0 +1,961 @@
+{
+    "collections": {
+        "lectures": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "slides.pdf"
+                ],
+                "optional_artifacts": [
+                    "slides-marked.pdf",
+                    "slides-wang.pdf",
+                    "slides-wang.pptx"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "note": {
+                            "type": "string"
+                        },
+                        "videos": {
+                            "nullable": true,
+                            "type": "list",
+                            "element_schema": {
+                                "type": "dict",
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "reading": {
+                            "nullable": true,
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "date": "2023-01-10",
+                        "number": 1,
+                        "topic": "Introduction",
+                        "reading": "Section 1.6"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/01-intro/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/01-intro/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/01-intro/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/01-intro/slides-wang.pptx"
+                        }
+                    }
+                },
+                "02-time_complexity-pt_I": {
+                    "metadata": {
+                        "date": "2023-01-12",
+                        "number": 2,
+                        "topic": "Asymptotic Time Complexity, pt. I",
+                        "reading": "Section 1.1 - 1.4"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/02-time_complexity-pt_I/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/02-time_complexity-pt_I/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/02-time_complexity-pt_I/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/02-time_complexity-pt_I/slides-wang.pptx"
+                        }
+                    }
+                },
+                "03-time_complexity-pt_II": {
+                    "metadata": {
+                        "date": "2023-01-17",
+                        "number": 3,
+                        "topic": "Asymptotic Time Complexity, pt. II",
+                        "reading": "Section 1.5"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/03-time_complexity-pt_II/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/03-time_complexity-pt_II/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/03-time_complexity-pt_II/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/03-time_complexity-pt_II/slides-wang.pptx"
+                        }
+                    }
+                },
+                "04-expected_time": {
+                    "metadata": {
+                        "date": "2023-01-19",
+                        "number": 4,
+                        "topic": "Expected Time and Lower Bounds",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/04-expected_time/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/04-expected_time/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/04-expected_time/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/04-expected_time/slides-wang.pptx"
+                        }
+                    }
+                },
+                "05-binary_search-recurrences": {
+                    "metadata": {
+                        "date": "2023-01-24",
+                        "number": 5,
+                        "topic": "Recurrences and Binary Search",
+                        "reading": "Sections 2.4.1 and 2.2"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/05-binary_search-recurrences/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/05-binary_search-recurrences/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/05-binary_search-recurrences/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/05-binary_search-recurrences/slides-wang.pptx"
+                        }
+                    }
+                },
+                "06-sorting": {
+                    "metadata": {
+                        "date": "2023-01-26",
+                        "number": 6,
+                        "topic": "Sorting",
+                        "reading": "Section 2.1 and 2.3",
+                        "videos": [
+                            {
+                                "title": "Using Sorted Structure",
+                                "url": "https://youtu.be/Y6j1RweAI_I?t=3689"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/06-sorting/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/06-sorting/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/06-sorting/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/06-sorting/slides-wang.pptx"
+                        }
+                    }
+                },
+                "07-quickselect": {
+                    "metadata": {
+                        "date": "2023-01-31",
+                        "number": 7,
+                        "topic": "Quickselect",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/07-quickselect/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/07-quickselect/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/07-quickselect/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/07-quickselect/slides-wang.pptx"
+                        }
+                    }
+                },
+                "08-bst": {
+                    "metadata": {
+                        "date": "2023-02-02",
+                        "number": 8,
+                        "topic": "Binary Search Trees",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/08-bst/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/08-bst/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/08-bst/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/08-bst/slides-wang.pptx"
+                        }
+                    }
+                },
+                "09-hashing": {
+                    "metadata": {
+                        "date": "2023-02-07",
+                        "number": 9,
+                        "topic": "Hashing",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/09-hashing/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/09-hashing/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/09-hashing/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/09-hashing/slides-wang.pptx"
+                        }
+                    }
+                },
+                "10-graph_theory": {
+                    "metadata": {
+                        "date": "2023-02-14",
+                        "number": 10,
+                        "topic": "Graph Theory",
+                        "reading": "Section 3.1 and 3.2",
+                        "videos": [
+                            {
+                                "title": "Graphs",
+                                "url": "https://youtu.be/lEwb7O4RJRw?t=222"
+                            },
+                            {
+                                "title": "Paths",
+                                "url": "https://youtu.be/lEwb7O4RJRw?t=2402"
+                            },
+                            {
+                                "title": "Connected Components",
+                                "url": "https://youtu.be/lEwb7O4RJRw?t=3355"
+                            },
+                            {
+                                "title": "Adjacency Matrix",
+                                "url": "https://youtu.be/lEwb7O4RJRw?t=3864"
+                            },
+                            {
+                                "title": "Adjacency Lists",
+                                "url": "https://youtu.be/lEwb7O4RJRw?t=4680"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/10-graph_theory/slides.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/10-graph_theory/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/10-graph_theory/slides-wang.pptx"
+                        }
+                    }
+                },
+                "11-bfs-pt_I": {
+                    "metadata": {
+                        "date": "2023-02-16",
+                        "number": 11,
+                        "topic": "Breadth First Search",
+                        "reading": "Section 3.3"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/11-bfs-pt_I/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/11-bfs-pt_I/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/11-bfs-pt_I/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/11-bfs-pt_I/slides-wang.pptx"
+                        }
+                    }
+                },
+                "12-bfs-pt_II": {
+                    "metadata": {
+                        "date": "2023-02-21",
+                        "number": 12,
+                        "topic": "BFS for Shortest Paths",
+                        "reading": "Section 3.3"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/12-bfs-pt_II/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/12-bfs-pt_II/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/12-bfs-pt_II/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/12-bfs-pt_II/slides-wang.pptx"
+                        }
+                    }
+                },
+                "13-dfs": {
+                    "metadata": {
+                        "date": "2023-02-23",
+                        "number": 13,
+                        "topic": "Depth-First Search",
+                        "reading": "Section 3.4"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/13-dfs/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/13-dfs/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/13-dfs/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/13-dfs/slides-wang.pptx"
+                        }
+                    }
+                },
+                "14-bellman_ford": {
+                    "metadata": {
+                        "date": "2023-02-28",
+                        "number": 14,
+                        "topic": "Bellman-Ford",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/14-bellman_ford/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/14-bellman_ford/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/14-bellman_ford/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/14-bellman_ford/slides-wang.pptx"
+                        }
+                    }
+                },
+                "15-dijkstra": {
+                    "metadata": {
+                        "date": "2023-03-02",
+                        "number": 15,
+                        "topic": "Dijkstra's Algorithm",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/15-dijkstra/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/15-dijkstra/slides-marked.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/15-dijkstra/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/15-dijkstra/slides-wang.pptx"
+                        }
+                    }
+                },
+                "16-prim": {
+                    "metadata": {
+                        "date": "2023-03-07",
+                        "number": 16,
+                        "topic": "Minimum Spanning Trees and Prim's Algorithm",
+                        "reading": null,
+                        "videos": [
+                            {
+                                "title": "(Optional) Correctness of Prim's Algorithm",
+                                "url": "https://youtu.be/zBEWXua4wl0"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/16-prim/slides.pdf"
+                        },
+                        "slides-wang.pdf": {
+                            "path": "lectures/16-prim/slides-wang.pdf"
+                        },
+                        "slides-wang.pptx": {
+                            "path": "lectures/16-prim/slides-wang.pptx"
+                        }
+                    }
+                },
+                "17-kruskal": {
+                    "metadata": {
+                        "date": "2023-03-14",
+                        "number": 17,
+                        "topic": "Kruskal's Algorithm",
+                        "reading": "Section 3.5"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/17-kruskal/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/17-kruskal/slides-marked.pdf"
+                        }
+                    }
+                },
+                "18-np_completeness": {
+                    "metadata": {
+                        "date": "2023-03-16",
+                        "number": 18,
+                        "topic": "Complexity Theory (Optional)",
+                        "reading": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/18-np_completeness/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/18-np_completeness/slides-marked.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "homeworks": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "homework.pdf",
+                    "solution.pdf",
+                    "template.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-time_complexity": {
+                    "metadata": {
+                        "due": "2023-01-18 23:59:00",
+                        "released": "2023-01-12 00:00:00",
+                        "number": 1,
+                        "topic": "Time Complexity Analysis"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/01-time_complexity/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/01-time_complexity/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/01-time_complexity/template.zip"
+                        }
+                    }
+                },
+                "02-asymptotic": {
+                    "metadata": {
+                        "due": "2023-01-25 23:59:00",
+                        "released": "2023-01-19 00:00:00",
+                        "number": 2,
+                        "topic": "Time Complexity and Asymptotic Notation"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/02-asymptotic/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/02-asymptotic/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/02-asymptotic/template.zip"
+                        }
+                    }
+                },
+                "03-recurrences-sorting": {
+                    "metadata": {
+                        "due": "2023-02-01 23:59:00",
+                        "released": "2023-01-26 00:00:00",
+                        "number": 3,
+                        "topic": "Recurrences and Sorting"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/03-recurrences-sorting/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/03-recurrences-sorting/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/03-recurrences-sorting/template.zip"
+                        }
+                    }
+                },
+                "04-quickselect-bst": {
+                    "metadata": {
+                        "due": "2023-02-08 23:59:00",
+                        "released": "2023-02-02 23:59:00",
+                        "number": 4,
+                        "topic": "Quickselect and BSTs"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/04-quickselect-bst/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/04-quickselect-bst/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/04-quickselect-bst/template.zip"
+                        }
+                    }
+                },
+                "05-hashing": {
+                    "metadata": {
+                        "due": "2023-02-15 23:59:00",
+                        "released": "2023-02-09 23:59:00",
+                        "number": 5,
+                        "topic": "Hashing"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/05-hashing/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/05-hashing/solution.pdf"
+                        }
+                    }
+                },
+                "06-graphs": {
+                    "metadata": {
+                        "due": "2023-02-22 23:59:00",
+                        "released": "2023-02-16 23:59:00",
+                        "number": 6,
+                        "topic": "Graph Theory and BFS"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/06-graphs/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/06-graphs/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/06-graphs/template.zip"
+                        }
+                    }
+                },
+                "07-bfs-dfs": {
+                    "metadata": {
+                        "due": "2023-03-01 23:59:00",
+                        "released": "2023-02-23 23:59:00",
+                        "number": 7,
+                        "topic": "BFS and DFS"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/07-bfs-dfs/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/07-bfs-dfs/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/07-bfs-dfs/template.zip"
+                        }
+                    }
+                },
+                "08-spd": {
+                    "metadata": {
+                        "due": "2023-03-08 23:59:00",
+                        "released": "2023-03-02 23:59:00",
+                        "number": 8,
+                        "topic": "Shortest Paths in Weighted Graphs"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/08-spd/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/08-spd/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/08-spd/template.zip"
+                        }
+                    }
+                },
+                "09-super_homework": {
+                    "metadata": {
+                        "due": "2023-03-22 23:59:00",
+                        "released": "2023-03-13 00:00:00",
+                        "number": 9,
+                        "topic": "Super Homework"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/09-super_homework/homework.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "discussions": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "discussion.pdf",
+                    "solution.pdf"
+                ],
+                "optional_artifacts": [
+                    "slides.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "recording": {
+                            "nullable": true,
+                            "type": "string"
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-time_complexity": {
+                    "metadata": {
+                        "date": "2023-01-12",
+                        "number": 1,
+                        "topic": "Time Complexity Analysis",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/01-time_complexity/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/01-time_complexity/solution.pdf"
+                        }
+                    }
+                },
+                "02-best_worst_time": {
+                    "metadata": {
+                        "date": "2023-01-19",
+                        "number": 2,
+                        "topic": "Time Complexity and Recurrences",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/02-best_worst_time/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/02-best_worst_time/solution.pdf"
+                        }
+                    }
+                },
+                "03-recursion_sorting": {
+                    "metadata": {
+                        "date": "2023-01-26",
+                        "number": 3,
+                        "topic": "Recurrence Relations and Sorting",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/03-recursion_sorting/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/03-recursion_sorting/solution.pdf"
+                        }
+                    }
+                },
+                "04-midterm_01_review": {
+                    "metadata": {
+                        "date": "2023-02-02",
+                        "number": 4,
+                        "topic": "Midterm 01 Review",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/04-midterm_01_review/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/04-midterm_01_review/solution.pdf"
+                        }
+                    }
+                },
+                "06-graphs_bfs": {
+                    "metadata": {
+                        "date": "2023-02-16",
+                        "number": 6,
+                        "topic": "Graphs and BFS",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/06-graphs_bfs/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/06-graphs_bfs/solution.pdf"
+                        }
+                    }
+                },
+                "07-dfs": {
+                    "metadata": {
+                        "date": "2023-02-23",
+                        "number": 7,
+                        "topic": "DFS",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/07-dfs/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/07-dfs/solution.pdf"
+                        }
+                    }
+                },
+                "08-bellman_ford": {
+                    "metadata": {
+                        "date": "2023-03-02",
+                        "number": 8,
+                        "topic": "Bellman-Ford",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/08-bellman_ford/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/08-bellman_ford/solution.pdf"
+                        }
+                    }
+                },
+                "09-prim_kruskal": {
+                    "metadata": {
+                        "date": "2022-03-10",
+                        "number": 9,
+                        "topic": "Prim, Kruskal, MST",
+                        "recording": "https://youtu.be/99H79OFp59w"
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/09-prim_kruskal/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/09-prim_kruskal/solution.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "labs": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "number": {
+                            "type": "integer"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-time_complexity": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2023-01-10 00:00:00",
+                        "ready": true,
+                        "due": "2023-01-15 23:59:00",
+                        "topic": "Time Complexity Analysis"
+                    },
+                    "artifacts": {}
+                },
+                "02-asymptotic": {
+                    "metadata": {
+                        "number": 2,
+                        "released": "2023-01-17 00:00:00",
+                        "ready": true,
+                        "due": "2023-01-22 23:59:00",
+                        "topic": "Time Complexity and Asymptotic Notation"
+                    },
+                    "artifacts": {}
+                },
+                "03-recurrences-sorting": {
+                    "metadata": {
+                        "number": 3,
+                        "released": "2023-01-24 00:00:00",
+                        "ready": true,
+                        "due": "2023-01-29 23:59:00",
+                        "topic": "Binary Search, Recurrences, Sorting"
+                    },
+                    "artifacts": {}
+                },
+                "04-quickselect-bst": {
+                    "metadata": {
+                        "number": 4,
+                        "released": "2023-01-31 00:00:00",
+                        "ready": true,
+                        "due": "2023-02-05 23:59:00",
+                        "topic": "Quickselect and BSTs"
+                    },
+                    "artifacts": {}
+                },
+                "05-hashing": {
+                    "metadata": {
+                        "number": 5,
+                        "released": "2023-02-07 00:00:00",
+                        "ready": true,
+                        "due": "2023-02-12 23:59:00",
+                        "topic": "Hashing"
+                    },
+                    "artifacts": {}
+                },
+                "06-graphs": {
+                    "metadata": {
+                        "number": 6,
+                        "released": "2023-02-14 00:00:00",
+                        "ready": true,
+                        "due": "2023-02-19 23:59:00",
+                        "topic": "Graph Theory and BFS"
+                    },
+                    "artifacts": {}
+                },
+                "07-bfs": {
+                    "metadata": {
+                        "number": 7,
+                        "released": "2023-02-21 00:00:00",
+                        "ready": true,
+                        "due": "2023-02-26 23:59:00",
+                        "topic": "BFS and DFS"
+                    },
+                    "artifacts": {}
+                },
+                "08-spd": {
+                    "metadata": {
+                        "number": 8,
+                        "released": "2023-02-28 00:00:00",
+                        "ready": true,
+                        "due": "2023-03-05 23:59:00",
+                        "topic": "Shortest Paths in Weighted Graphs"
+                    },
+                    "artifacts": {}
+                },
+                "09-mst": {
+                    "metadata": {
+                        "number": 9,
+                        "released": "2023-03-14 00:00:00",
+                        "ready": true,
+                        "due": "2023-03-19 23:59:00",
+                        "topic": "Shortest Paths in Weighted Graphs"
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "default": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {
+                "notes": {
+                    "metadata": {},
+                    "artifacts": {
+                        "book.pdf": {
+                            "path": "default/notes/book.pdf"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

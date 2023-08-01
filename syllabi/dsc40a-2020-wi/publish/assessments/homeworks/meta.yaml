@@ -1,0 +1,32 @@
+01-median_mean/build/homework.pdf:
+  description: The Median and the Mean
+  due: January 17
+01-median_mean/build/solution.pdf: null
+02-gradient_descent/build/homework.pdf:
+  description: Loss Functions and Gradient Descent
+  due: January 24
+02-gradient_descent/build/solution.pdf: null
+03-regression/build/homework.pdf:
+  description: Linear Regression
+  due: January 31
+03-regression/build/solution.pdf: null
+04-linear_algebra/build/homework.pdf:
+  description: Linear Algebra and Regression
+  due: February 07
+04-linear_algebra/build/solution.pdf: null
+05-gradient/build/homework.pdf:
+  description: Multiple Regression and Gradients
+  due: February 14
+05-gradient/build/solution.pdf: null
+06-probability/build/homework.pdf:
+  description: Perceptrons and Probability
+  due: February 21
+06-probability/build/solution.pdf: null
+07-combinatorics/build/homework.pdf:
+  description: Combinatorics and Conditional Probability
+  due: February 28
+07-combinatorics/build/solution.pdf: null
+08-bayes/build/homework.pdf:
+  description: Naive Bayes and Conditional Independence
+  due: March 13
+08-bayes/build/solution.pdf: null

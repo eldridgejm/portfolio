@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Fira+Sans|Noto+Serif+JP|Roboto+Slab&display=swap" rel="stylesheet">
+
+        <title>DSC 40A</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img style="min-width: 100px; max-width: 100px; height: auto" src="dsc40a.svg"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./homeworks.html">Homeworks</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="resources.html#notes">Course Notes</a>
+                            <a class="dropdown-item" href="resources.html#slides">Lecture Slides</a>
+                            <a class="dropdown-item" href="resources.html#practice">Practice Exams</a>
+                            <a class="dropdown-item" href="resources.html#discussions">Discussion Worksheets</a>
+                            <a class="dropdown-item" href="resources.html#demos">Demo Notebooks</a>
+                            <a class="dropdown-item" href="resources.html#exams">Exam Solutions</a>
+                            <a class="dropdown-item" href="resources.html#campuswire">Campuswire</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hours.html">Office Hours</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="syllabus.html#materials">Required Materials</a>
+                            <a class="dropdown-item" href="syllabus.html#campuswire">Campuswire</a>
+                            <a class="dropdown-item" href="syllabus.html#tokens">Tokens</a>
+                            <a class="dropdown-item" href="syllabus.html#grading">Grading Scheme</a>
+                            <a class="dropdown-item" href="syllabus.html#exams">Schedule</a>
+                            <a class="dropdown-item" href="syllabus.html#regrades">Regrades</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    
+                    <p>
+                    <h1>Resources</h1>
+                    </p>
+
+                    <div class="section">
+                        <a class="anchor" name="notes"></a>
+                        <h2>Course Notes</h2>
+
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">chapter</th>
+                            <th scope="col">topic</th>
+                        </tr>
+                        </thead>
+                        
+                        
+                        <tr>
+                            <td>
+                                01
+                            </td>
+                            <td>
+                                <a target="_blank" href="publish/notes/01-loss/build/notes.pdf">
+                                Learning via Optimization
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>
+                                02
+                            </td>
+                            <td>
+                                <a target="_blank" href="publish/notes/02-regression/build/notes.pdf">
+                                Least Squares Regression
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        </table>
+
+                        <p>
+                        For the latter part of the course, we'll be using
+                        <a href=http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/amsbook.mac.pdf">
+                            Grinstead and Snell, "Introduction to Probability"
+                        </a>, which is freely available as a PDF.
+                        </p>
+
+                    </div>
+
+                    <div class="section">
+                        <a class="anchor" name="slides"></a>
+                        <h2>Lecture Slides</h2>
+
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">topic</th>
+                            <th scope="col">slides</th>
+                        </tr>
+                        </thead>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                01
+                            </td>
+                            <td>
+                                Learning via Optimization, pt. I: Intro
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/01-intro/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/01-intro/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                02
+                            </td>
+                            <td>
+                                Learning via Optimization, pt. II: The Median
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/02-median/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/02-median/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                03
+                            </td>
+                            <td>
+                                Learning via Optimization, pt. III: The Mean
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/03-mean/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/03-mean/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                04
+                            </td>
+                            <td>
+                                Learning via Optimization, pt. IV: Gradient Descent
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/04-gradient_descent/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/04-gradient_descent/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                05
+                            </td>
+                            <td>
+                                Learning via Optimization, pt. V: Convexity
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/05-convexity/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/05-convexity/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                06
+                            </td>
+                            <td>
+                                Least Squares Regression, pt. I: Set-Up
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/06-regression-I/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/06-regression-I/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                07
+                            </td>
+                            <td>
+                                Least Squares Regression, pt. II: Solutions
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/07-regression-II/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/07-regression-II/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                08
+                            </td>
+                            <td>
+                                Least Squares Regression, pt. III: Linear Algebra
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/08-linear_algebra/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/08-linear_algebra/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                09
+                            </td>
+                            <td>
+                                Least Squares Regression, pt IV: Gradient and Normal Equations
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/09-gradient/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/09-gradient/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                Least Squares Regression, pt V: Non-Linear Trends and Classification
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/10-multiple_regression/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/10-multiple_regression/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                Perceptrons
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/11-perceptron/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/11-perceptron/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                12
+                            </td>
+                            <td>
+                                Probability
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/12-probability/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/12-probability/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                Combinatorics
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/13-combinatorics/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/13-combinatorics/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                Conditional Probability
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/14-conditional/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/14-conditional/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                15
+                            </td>
+                            <td>
+                                Independence
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/15-independence/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/15-independence/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                Naive Bayes, pt. I
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/16-naive_bayes-I/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/16-naive_bayes-I/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                Naive Bayes, pt. II
+                            </td>
+                            <td>
+                                <table class="table table-borderless table-links">
+                                    <tr>
+                                        <td><a target="_blank" href="publish/lectures/17-naive_bayes-II/build/lecture.pdf">blank</a></td>
+                                
+                                    <td>
+                                        <a target="_blank" href="publish/lectures/17-naive_bayes-II/marked.pdf">
+                                        marked
+                                        </a>
+                                    </td>
+                                
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        </table>
+
+                    </div>
+
+                    <div class="section">
+                        <a class="anchor" name="practice"></a>
+                        <h2>Final Exam Practice</h2>
+
+                        <p>
+                            Linked below are several exams from previous quarters (some with solutions, some without). You
+                            may find these exams useful when studying, however, please note that they are not indicative of
+                            the format of this quarter's final exam! This is partly due to the fact that our exam will be
+                            online, and therefore necessarily of a different format. But it is also due to the fact that
+                            the content of DSC 40A has changed slightly over the previous two years. So while the exams
+                            are mostly similar, some will contain questions about topics we haven't discussed, such as 
+                            PCA or k-Means clustering.
+                        </p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">exam</th>
+                                    <th scope="col">description</th>
+                                </tr>
+                            </thead>
+
+                            <tr>
+                                <td>
+                                    <a href="publish/practice/final-A.pdf">Exam A</a> and <a href="publish/practice/final-A-soln.pdf">solutions</a>
+                                </td>
+                                <td>
+                                    Ignore #4, #5, #6, #13, #16(a), #17
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="publish/practice/final-B.pdf">Exam B</a> (no solutions)
+                                </td>
+                                <td>
+                                    Ignore #5, #6, #7, #10(c) and (d), #12(d), #14
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="publish/practice/final-C.pdf">Exam C</a> and <a href="publish/practice/final-C-soln.pdf">solutions</a>
+                                </td>
+                                <td>
+                                    Ignore #1(g) and (h), #3
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="section">
+                        <a class="anchor" name="discussions"></a>
+                        <h2>Discussion Worksheets</h2>
+
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">topic</th>
+                            <th scope="col">worksheet</th>
+                        </tr>
+                        </thead>
+                            
+                            
+                            <tr>
+                                <td>
+                                    01
+                                </td>
+                                <td>
+                                    Summation Notation, Simple Proofs, Loss Functions
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/01-loss/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/01-loss/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    02
+                                </td>
+                                <td>
+                                    Inequalities, Convexity
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/02-convexity/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/02-convexity/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    03
+                                </td>
+                                <td>
+                                    Linear Regression
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/03-regression/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/03-regression/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    04
+                                </td>
+                                <td>
+                                    Matrix Calculus
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/04-matrix-calculus/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/04-matrix-calculus/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    05
+                                </td>
+                                <td>
+                                    Perceptrons and Probability
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/05-perceptrons-probability/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/05-perceptrons-probability/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    06
+                                </td>
+                                <td>
+                                    Combinatorics and Conditional Probability
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/06-combinatorics-conditional-probability/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/06-combinatorics-conditional-probability/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    07
+                                </td>
+                                <td>
+                                    Naive Bayes and Conditional Independence
+                                </td>
+
+                                <td>
+                                    <table class="table table-borderless table-links">
+                                        <tr>
+                                            <td>
+                                                <a target="_blank" href="publish/assessments/discussions/07-naive-bayes-conditional-independence/build/discussion.pdf">
+                                                    blank
+                                                </a>
+                                            </td>
+                                            <td>
+                                            
+                                                <a target="_blank" href="publish/assessments/discussions/07-naive-bayes-conditional-independence/build/solution.pdf">
+                                                solved
+                                                </a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            
+                        </table>
+                    </div>
+
+
+                    <div class="section">
+                        <a class="anchor" name="demos"></a>
+                        <h2>Demo Notebooks</h2>
+
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">topic</th>
+                        </tr>
+                        </thead>
+                            <tr>
+                                <td>
+                                    01
+                                </td>
+                                <td>
+                                        <a href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//eldridgejm/dsc40a-demos&branch=master&subPath=01-gradient_descent/GradientDescent.ipynb&app=notebook">
+                                        Gradient Descent
+                                        </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    02
+                                </td>
+                                <td>
+                                        <a href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//eldridgejm/dsc40a-demos&branch=master&subPath=02-scipy_optimize/ScipyOptimize.ipynb&app=notebook">
+                                        Numerical Optimization with SciPy
+                                        </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    03a
+                                </td>
+                                <td>
+                                        <a href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//eldridgejm/dsc40a-demos&branch=master&subPath=03-multiple_regression/Sales.ipynb&app=notebook">
+                                        Multiple Linear Regression
+                                        </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    03b
+                                </td>
+                                <td>
+                                        <a href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//eldridgejm/dsc40a-demos&branch=master&subPath=03-multiple_regression/Non-Linear Relationship.ipynb&app=notebook">
+                                        Polynomial Regression
+                                        </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    04
+                                </td>
+                                <td>
+                                        <a href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//eldridgejm/dsc40a-demos&branch=master&subPath=04-least_squares_classification/Least Squares Classification.ipynb&app=notebook">
+                                        Least Squares Classification
+                                        </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    05
+                                </td>
+                                <td>
+                                        <a href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//eldridgejm/dsc40a-demos&branch=master&subPath=05-perceptrons/Perceptron Demo.ipynb&app=notebook">
+                                            Perceptrons
+                                        </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="section">
+                        <a class="anchor" name="exams"></a>
+                        <h2>Exam Solutions</h2>
+
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">exam</th>
+                            <th scope="col">solutions</th>
+                        </tr>
+                        </thead>
+                            
+                            
+                            <tr>
+                                <td>
+                                    Midterm 01
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" href="publish/assessments/exams/midterm-01/build/solution.pdf">
+                                        solved
+                                        </a>
+                                    
+                                </td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>
+                                    Midterm 02
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" href="publish/assessments/exams/midterm-02/build/solution.pdf">
+                                        solved
+                                        </a>
+                                    
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+
+                    <div class="section">
+                        <a class="anchor" name="Campuswire"></a>
+                        <h2>Message Board</h2>
+
+                        We'll use 
+                        <a href="https://campuswire.com/c/GF22AE928/feed" target="_blank">Campuswire</a>
+                        as the course message board. I'll post all announcements there, so make sure you have access.
+                        You can also ask (and answer) questions about course topics and message other people in the class.
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

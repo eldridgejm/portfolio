@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Fira+Sans|Noto+Serif+JP|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>DSC 10 - Principles of Data Science</title>
+    </head>
+    <body class="text-md-left">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    
+<div class="row" style="font-size: 40pt; margin-bottom: 1em">
+    <div class="col-md-10">
+        <a href="./index.html" style="color: black">⤺</a>
+        <i class="em-svg em-female-technologist" aria-role="presentation" ></i>
+        Tech Support
+    </div>
+</div>
+
+<p>This page gathers some of the most common errors you might see when working
+on assignments in Jupyter Notebooks. If you're unable to find your problem
+here or you're still having trouble after trying the recommended fix, you can
+get help by posting on our <a href="https://campuswire.com/c/GB6F5E8BE/feed">Campuswire</a>.</p>
+<div class="toc">
+<ul>
+<li><a href="#the-gradercheck_all-fails-but-all-previous-tests-passed">The grader.check_all() fails, but all previous tests passed.</a></li>
+<li><a href="#my-notebooks-tests-pass-but-when-i-submit-to-gradescope-a-test-fails">My notebook's tests pass, but when I submit to Gradescope a test fails.</a></li>
+<li><a href="#i-get-an-error-saying-grader-is-not-defined">I get an error saying grader is not defined.</a></li>
+<li><a href="#the-tester-fails-with-an-error-saying-that-it-is-trying-isinstance-numbersintegral">The tester fails with an error saying that it is trying isinstance(..., numbers.Integral).</a></li>
+<li><a href="#i-have-the-right-answer-im-sure-but-the-test-fails">I have the right answer, I'm sure, but the test fails.</a></li>
+<li><a href="#my-notebook-wont-load-is-datahub-down">My notebook won't load. Is Datahub down?</a></li>
+<li><a href="#whenever-i-run-a-particular-cell-my-kernel-dies">Whenever I run a particular cell, my kernel dies.</a></li>
+<li><a href="#i-get-an-ugly-red-bar-and-a-long-error-message-when-starting-an-assignment">I get an ugly red bar and a long error message when starting an assignment.</a></li>
+</ul>
+</div>
+<hr />
+<h4 id="the-gradercheck_all-fails-but-all-previous-tests-passed">The <code>grader.check_all()</code> fails, but all previous tests passed.</h4>
+<p>This can happen if you "overwrite" a variable that is used in a question. For
+instance, if Question 1 asks you to store your answer in a variable named <code>foo</code>,
+and later on in the notebook you change the value of <code>foo</code>, you'll see the test
+after Question 1 pass, but the test at the end of the notebook fail.</p>
+<p><em>Fix</em>: rename later instances of that variable so you're not overwriting it.</p>
+<hr />
+<h4 id="my-notebooks-tests-pass-but-when-i-submit-to-gradescope-a-test-fails">My notebook's tests pass, but when I submit to Gradescope a test fails.</h4>
+<p>This can happen if you're running your notebook's cells out-of-order. The
+autograder runs your notebook top-to-bottom. If you're defining a variable at
+the bottom of your notebook and using it at the top, the Gradescope autograder
+will fail because it doesn't recognize the variable when it encounters it.</p>
+<p>This is why we recommend running Kernel -&gt; Restart and Run All: it "forgets" all
+of the variables and runs the notebook from top-to-bottom, just like the
+Gradescope autograder will. It will highlight any issues.</p>
+<p><em>Fix</em>: Run Kernel -&gt; Restart and Run All, then find the first cell that raises
+an error. Make sure that all of the variables used in that cell have been
+defined above that cell, and not below.</p>
+<hr />
+<h4 id="i-get-an-error-saying-grader-is-not-defined">I get an error saying <code>grader</code> is not defined.</h4>
+<p>If it has been a while since you've worked on an assignment, the kernel will
+shut itself down to preserve memory. When this happens, all of your variables
+are forgotten, including the <code>grader</code>. That's OK: you'll just need to re-run all
+of the cells. </p>
+<p><em>Fix</em>: Re-run all of the cells you've completed so far. The easy way to do this
+is by using Kernel -&gt; Restart and Run All.</p>
+<hr />
+<h4 id="the-tester-fails-with-an-error-saying-that-it-is-trying-isinstance-numbersintegral">The tester fails with an error saying that it is trying <code>isinstance(..., numbers.Integral)</code>.</h4>
+<p>This error is telling you that the answer should be an integer, but your answer
+is not. This often happens when you've done some intermediate work towards the
+answer and saved an intermediate result in the answer variable instead of the
+final result.</p>
+<p>Sometimes instead of <code>isinstance(..., numbers.Integral)</code>, you'll see something
+like <code>isinstance(..., bpd.DataFrame)</code>. This is saying that the answer should be
+a DataFrame, but yours was something else. The rest of the above still applies.</p>
+<p><em>Fix</em>: check the type of your answer variable with <code>type()</code>. Is it what you
+expected?</p>
+<hr />
+<h4 id="i-have-the-right-answer-im-sure-but-the-test-fails">I have the right answer, I'm sure, but the test fails.</h4>
+<p>While you might <em>see</em> the correct answer displayed as the result of the cell,
+chances are it isn't being stored in the answer variable.</p>
+<p><em>Fix</em>: Make sure you are assigning the result to the answer variable. Make sure
+there are no typos in the variable name.</p>
+<hr />
+<h4 id="my-notebook-wont-load-is-datahub-down">My notebook won't load. Is Datahub down?</h4>
+<p>It isn't rare for Datahub to have availability issues, especially early in the
+quarter. Usually it is back up and running again within an hour. In other
+instances, there are some things you can do to get the notebook running again:</p>
+<p><em>Fixes</em>:</p>
+<ul>
+<li>Make sure your internet connection is working.</li>
+<li>If you can, restart your server by clicking the button at the top right
+  labeled "Control Panel", then select "Stop My Server", followed by "Start My
+  Server".</li>
+</ul>
+<hr />
+<h4 id="whenever-i-run-a-particular-cell-my-kernel-dies">Whenever I run a particular cell, my kernel dies.</h4>
+<p>If one particular cell seems to cause your kernel to die, your code is probably
+incorrect in a way that is causing the computer to use more memory than it has
+available. For instance: your code is trying to create a gigantic array. To
+prevent from crashing the entire server, the kernel will "die".</p>
+<p><em>Fix</em>: find the part of your code that is trying to create such a large object
+and fix it.</p>
+<hr />
+<h4 id="i-get-an-ugly-red-bar-and-a-long-error-message-when-starting-an-assignment">I get an ugly red bar and a long error message when starting an assignment.</h4>
+<p>In rare instances, clicking on an assignment link on the course page may result
+in an error like the one shown in the image below.</p>
+<p><img src="static/sync_error.png" width=75%></p>
+<p><strong>Warning!</strong> There are several errors that look similar to the image above, but
+before proceeding carefully read the error message to ensure that it contains
+the phrase "Your local changes to the following files would be overwritten by
+merge". If this is <em>not</em> present in the error message, contact us on Campuswire
+with a screenshot.</p>
+<p>If you <em>do</em> see the above phrase, continue with the steps below.</p>
+<ol>
+<li>
+<p>Go directly to <code>datahub.ucsd.edu</code> in a browser and log in (if you are not
+   logged in already). You should be taken to a "File Manager" view which lists
+   the folders available in your account. If DSC 10 is the only class you have
+   taken that uses DataHub, you'll likely see only one folder:
+   <code>dsc10-2021-su-public/</code>.</p>
+</li>
+<li>
+<p>On the upper right of the page, click the dropdown menu that says "New" and
+   select "Terminal".</p>
+</li>
+<li>
+<p>In the terminal, type the following command, then hit the <em>enter</em> key to run
+   it.</p>
+<p><code>cd dsc10-2021-su-public</code></p>
+<p>The command will not display anything.</p>
+</li>
+<li>
+<p>Still in the terminal, type the following command and hit enter to run it:</p>
+<p><code>git stash</code></p>
+<p>You should see some output.</p>
+</li>
+<li>
+<p>Now go back to dsc10.com and click the link to the assignment you were
+   attempting to work on. It should now load without error. If you still see an
+   error, make a post on <a href="https://campuswire.com/c/GB6F5E8BE/feed">Campuswire</a> with
+   a screenshot of the error you see now.</p>
+</li>
+</ol>
+
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

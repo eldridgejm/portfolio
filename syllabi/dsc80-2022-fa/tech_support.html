@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>DSC 80</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 80</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://notes.dsc80.com/"><span class="">📖 Textbook</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="http://github.com/dsc-courses/dsc80-2022-fa"><span class="">👩‍💻 GitHub</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./tech_support.html"><span class="">❓ Tech Support</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://edstem.org/us/join/WkeJUS"><span class="">💬 Ed</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/445181"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+
+                        <div class="site-title">
+                            <h1>DSC 80 &ndash; The Practice and Application of Data Science</h1>
+                            <hr>
+                        </div>
+
+
+                        <h1 id="tech-support">❓ Tech Support</h1>
+<p>Assignments in DSC 80 are mostly coding assignments, so it's important to make
+sure that your computing environment is set up properly. There are two ways to
+go about things: you can set up a <em>local</em> environment or use a <em>remote</em>
+environment that is largely pre-configured. On this page, we'll talk about
+both options.</p>
+<p>Writing code locally, on your personal computer, is our preferred option. We
+won't lie &ndash; it involves a little more time to set up and a steeper
+learning curve. But in the long run, you'll likely find the local environment
+more comfortable and faster since you can customize it to your own needs.
+Additionally, setting up your own local Python environment is something you'll
+be expected to do when working as a data scientist, so it's a good idea to start
+now.</p>
+<p>There has been a lot written about how to set up a Python environment, so
+we won't reinvent the wheel. This page will only be a summary; Google will be
+your main resource. But always feel free to come to a staff member's office
+hours if you have a question about setting up your environment, using Git,
+or similar &mdash; we're here to help.</p>
+<div class="toc">
+<ul>
+<li><a href="#tech-support">❓ Tech Support</a><ul>
+<li><a href="#working-locally">Working Locally</a><ul>
+<li><a href="#installing-python">Installing Python</a></li>
+<li><a href="#replicating-the-gradescope-environment">Replicating the Gradescope Environment</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#choosing-a-text-editor-or-ide">Choosing a Text Editor or IDE</a></li>
+</ul>
+</li>
+<li><a href="#working-remotely-datahub">Working Remotely (DataHub)</a><ul>
+<li><a href="#warning">⚠️ Warning!</a></li>
+<li><a href="#installing-or-updating-python-packages">Installing or Updating Python Packages</a></li>
+<li><a href="#jupyterlab">JupyterLab</a></li>
+<li><a href="#git_1">Git</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Much of the content on this page is also covered in the walkthrough video below:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1MgtV3bLZPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="working-locally">Working Locally</h2>
+<p>Working <em>locally</em> simply refers to developing code using software installed
+on your own machine. For this class, the software you'll need includes Python
+3.8, a few specific Python packages, Git, and a text editor.</p>
+<h3 id="installing-python">Installing Python</h3>
+<p>There are several ways of installing Python on your own computer. We recommend
+downloading the <a href="https://www.anaconda.com/products/individual">Anaconda</a> Python
+distribution and following the instructions for installing it. You should
+install the standard Anaconda (not Miniconda) with Python 3.8.</p>
+<p>As mentioned above, Anaconda is a Python <em>distribution</em>. This means it comes
+with many useful Python packages, including, for instance, <code>pandas</code>. If you
+should need to install a new Python package, you can use the <code>conda</code> command.
+You'll need to open a terminal. On Windows, you can use the Anaconda Prompt;
+on macOS or Linux, you can use the terminal app that comes with the operating
+system, or install one (Alacritty is a popular choice). Then, inside the# 
+terminal, type <code>conda install &lt;package_name&gt;</code>, where <code>&lt;package_name&gt;</code> is
+replaced by the name of the package you want to install, and hit enter.</p>
+<p>Anaconda comes with pandas, numpy, and many other data science packages. You
+will, however, need to install <code>otter-grader</code>; this is the autograder package
+that runs the tests in labs, projects, etc. You can do so by running: <code>pip
+install otter-grader</code> in a terminal.</p>
+<h3 id="replicating-the-gradescope-environment">Replicating the Gradescope Environment</h3>
+<p>Gradescope has a package environment using which it evaluates the submissions. 
+It is advised to create the same environment so that there are no issues due to 
+version changes during development vs. evaluation. Please follow the below steps 
+to create the environment with required packages</p>
+<p><strong>1. Have a requirements.txt file with the following text</strong></p>
+<pre><code>matplotlib==3.4.3
+notebook==6.4.12
+numpy==1.21.2
+otter-grader==3.1.4
+pandas==1.3.3
+Pillow==8.3.2
+pydantic==1.8.2
+PyYAML==5.4.1
+requests==2.26.0
+tqdm==4.62.3
+urllib3==1.26.7
+scikit-learn==1.0
+seaborn==0.11.2
+beautifulsoup4==4.10.0
+</code></pre>
+<p><strong>2. In Terminal, create a new conda environment</strong>: <code>conda create -n dsc80 python=3.8</code></p>
+<p><strong>3. Activate the environment</strong>: <code>conda activate dsc80</code></p>
+<p><strong>4. Install the requirements in the new env</strong>: <code>pip install -r requirements.txt</code></p>
+<p>Every time you work on DSC80, activate this environment by running <code>conda activate
+dsc80</code></p>
+<h3 id="git">Git</h3>
+<p>All of our course materials, including your assignments, are hosted on GitHub
+in a Git repository. This means that you'll need to download
+<a href="https://git-scm.com/">Git</a> and use in order to work with the course materials.</p>
+<p>Git is a <em>version control system</em>. In short, it is used to keep track of the
+history of a project. With Git, you can go back in time to any previous version
+of your project, or even work on two different versions (or "branches") in
+parallel and "merge" them together at some point in the future. We'll stick to
+using the basic features of Git in DSC 80.</p>
+<p>There are Git GUIs, and you can use them for this class. You can also use the
+command-line version of Git. To get started, you'll need to "clone" the
+course repository. The command to do this is:</p>
+<pre><code>git clone https://github.com/dsc-courses/dsc80-2022-fa
+</code></pre>
+<p>This will copy the repository to a directory on your computer. To bring in
+the latest version of the repository, run <code>git pull</code>. This will <em>not</em> overwrite
+your work. In fact, Git is designed to make it very difficult to lose work
+(although it's still possible!).</p>
+<h3 id="choosing-a-text-editor-or-ide">Choosing a Text Editor or IDE</h3>
+<p>In this class, you will need to use a combination of editors for doing your
+assignments: The python files should be developed with an IDE (for syntax
+highlighting and running doctests) and the data/results should be
+analyzed/presented in Jupyter Notebooks. Below is an incomplete list of IDEs you
+might want to try. For more information about them, feel free to ask me!</p>
+<ul>
+<li>
+<p>The <a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> text editor: see above. A nice combination with notebooks.</p>
+</li>
+<li>
+<p><a href="https://www.sublimetext.com/">sublime</a>: A favorite text editor of hackers, famous for its multiple cursors. A good, general-purpose choice.</p>
+</li>
+<li>
+<p><a href="https://atom.io/">atom</a>: GitHub’s editor. Pretty nice fully featured IDE. Can only work locally.</p>
+</li>
+<li>
+<p><a href="https://www.jetbrains.com/pycharm/">PyCharm (IntelliJ)</a>: Those who feel at home coding Java. Can only work locally.</p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/">VSCode</a>: Microsoft Visual Studio Code -- the trendy IDE of 2021. Might be <em>too much</em> for the small projects we're working on, like using a sledgehammer to drive in a thumbtack.</p>
+</li>
+<li>
+<p><a href="https://www.nano-editor.org/">nano</a>: available on most unix commandlines (e.g. DataHub Terminal). If you use this for more than changing a word or two, you'll hate your life.</p>
+</li>
+<li>
+<p><a href="https://neovim.io/">(neo)vim</a>: lightweight, productive text-editor that might
+  be the most efficient way to edit text, if you can ever learn how to use it.
+  Beware opening vim, as you may never figure out how to quit (literally).
+  Justin's text editor of choice.</p>
+</li>
+<li>
+<p><a href="https://www.gnu.org/software/emacs/">emacs</a>: A text editor for those who prefer a life of endless toil. Endlessly customizable, it promises everything, but you’re never good enough to deliver. Its keyboard shortcuts are guaranteed to give you carpal tunnel.</p>
+</li>
+</ul>
+<h2 id="working-remotely-datahub">Working Remotely (DataHub)</h2>
+<p>Working <em>remotely</em> means using an environment that someone else set up for you
+on a computer far, far away, usually through the browser. This is the way you
+wrote code in DSC 10, for instance. There's nothing wrong with this, <em>per se</em>,
+and it is simpler, but you should think of this option as developing with
+"training wheels". Eventually, you will need to learn how to set up your own
+Python environment, and now is as good a time as any.</p>
+<p>There are servers available to use at <a href="datahub.ucsd.edu">datahub.ucsd.edu</a>.
+These are a lot like the jupyterhub servers that you used in DSC 10, however
+they are customized for this course. After logging in with your ucsd account,
+you will be taken the familiar juptyer landing page. The server you are logged
+into has ~4GB of RAM available, and has Python with all the necessary
+packages.</p>
+<h3 id="warning">⚠️ Warning!</h3>
+<p>DataHub outages are not uncommon, and they can be expected to occur once or
+twice per quarter (sometimes more). Outages typically last for a few hours or
+less, but they can prevent you from working on your assignment.</p>
+<p>Since we do not manage DataHub, we cannot make any guarantees about its
+availability. DataHub crashes that prevent you from turning in or working on
+your assignment near the deadline are typically handled via the usual <a href="./syllabus.html#slip-days">slip
+day</a> mechanism. If DataHub has been down for a long
+time (more than 24 hours), let us know and we'll consider a blanket extension
+&ndash; though this has very rarely (never?) happened.</p>
+<p>Our advice is to use a local development environment, or to at least have one as
+available as a backup option. If you decide to use DataHub as your first choice,
+you should keep an extra slip day or two in reserve in case the server crashes.</p>
+<h3 id="installing-or-updating-python-packages">Installing or Updating Python Packages</h3>
+<p>To update a package (e.g. pandas) on DataHub, you'll need to use the command
+line. To do this, open “New &gt; Terminal” and type:</p>
+<p><code>pip install --user --upgrade pandas</code></p>
+<p>followed by the enter key to run the command.</p>
+<p>One package that you'll likely need to install is <code>otter-grader</code>. This package
+provides the autograder that checks your answers in the labs and projects.</p>
+<h3 id="jupyterlab">JupyterLab</h3>
+<p>The remote servers have a development environment installed on them, however,
+it’s non-intuitive how to access it. Once on the landing page, the url should
+read something like:</p>
+<p><code>https://datahub.ucsd.edu/user/USER/tree</code></p>
+<p>You can access the IDE (integrate development environment) by changing "tree" to
+"lab". This brings up jupyterlab. The url should look something like this:</p>
+<p><code>https://datahub.ucsd.edu/user/USER/lab</code></p>
+<p>For more information on this IDE, you can see read about it here. From within
+jupyterlab, you can:</p>
+<ul>
+<li>use a python console</li>
+<li>run jupyter notebooks</li>
+<li>use a terminal (e.g. to pull git repos)</li>
+<li>develop python code in .py files.</li>
+</ul>
+<h3 id="git_1">Git</h3>
+<p>Using DataHub Servers will require you to pull down HW assignments from GitHub
+using the command-line (manually uploading to the servers is very cumbersome!)
+To do this, open “new &gt; terminal” and, to get the course repository for the
+first time, type: <code>git clone https://github.com/dsc-courses/dsc80-2022-fa</code> Then,
+open up the file-tree in the original Jupyter tab, and you should see all the
+course files now there. If you have already cloned the repository, and just want
+to get the latest files, type <code>git pull</code> and you should see the
+updated files.</p>
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

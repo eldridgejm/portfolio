@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>DSC 180</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 180</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><span class="">Home</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/c/GF415D4B3/feed"><span class="">Campuswire</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+
+                        <div class="site-title">
+                            <h1>DSC 180 &ndash; The Spread of Misinformation Online</h1>
+                            <hr>
+                        </div>
+
+
+                        <h1 id="week-07-finding-links-to-misinformation">Week 07 - Finding Links to Misinformation</h1>
+<h2 id="topics">Topics</h2>
+<p>This week, we'll find links to misinformation in the tweets that we collected
+last time.</p>
+<p>Last week, we saw that around 38% of tweets contain URLs. The task this week
+will be to find which of these URLs point to news sources that are unreliable
+sources of information or misinformation.</p>
+<p>To do so, we first need to determine which websites are sources of
+misinformation. Like the authors of the paper, we will not do this ourselves,
+but will instead use a list compiled by others. In particular, we'll use the
+listing at <a href="https://iffy.news/iffy-plus/">https://iffy.news/iffy-plus/</a>.</p>
+<h3 id="tasks">Tasks</h3>
+<ol>
+<li>
+<p>Read <a href="https://iffy.news/iffy-plus/">https://iffy.news/iffy-plus/</a> to find
+   details on how they determine if a site is a source of misinformation.</p>
+</li>
+<li>
+<p>Scrape, or otherwise collect the information in the table on the above
+   webpage in order to collect a list of sources of misinformation.</p>
+</li>
+<li>
+<p>Come up with a list of several "fact checking" websites, such as snopes.com,
+   factcheck.org, etc. Aim to have at least three.</p>
+</li>
+<li>
+<p>For each tweet in your collected data that contains a link, determine if the
+   tweet links to a source of misinformation, a fact-checker, or neither.
+   (You'll need to decide what to do if there is more than one link. Is that a
+   common occurrence?)</p>
+</li>
+</ol>
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

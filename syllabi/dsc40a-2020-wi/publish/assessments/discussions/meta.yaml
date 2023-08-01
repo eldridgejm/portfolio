@@ -1,0 +1,21 @@
+01-loss/build/discussion.pdf:
+  description: Summation Notation, Simple Proofs, Loss Functions
+01-loss/build/solution.pdf: null
+02-convexity/build/discussion.pdf:
+  description: Inequalities, Convexity
+02-convexity/build/solution.pdf: null
+03-regression/build/discussion.pdf:
+  description: Linear Regression
+03-regression/build/solution.pdf: null
+04-matrix-calculus/build/discussion.pdf:
+  description: Matrix Calculus
+04-matrix-calculus/build/solution.pdf: null
+05-perceptrons-probability/build/discussion.pdf:
+  description: Perceptrons and Probability
+05-perceptrons-probability/build/solution.pdf: null
+06-combinatorics-conditional-probability/build/discussion.pdf:
+  description: Combinatorics and Conditional Probability
+06-combinatorics-conditional-probability/build/solution.pdf: null
+07-naive-bayes-conditional-independence/build/discussion.pdf:
+  description: Naive Bayes and Conditional Independence
+07-naive-bayes-conditional-independence/build/solution.pdf: null

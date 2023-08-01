@@ -1,0 +1,133 @@
+@media (max-width: 992px) {
+    img#me {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: "Helvetica", "Fira Sans", Sans;
+    font-size: 13pt;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 5em;
+    padding-bottom: 4em;
+}
+
+div.week-future {
+    opacity: 20%;
+}
+
+div.section {
+    margin-bottom: 3em;
+}
+
+div.week {
+    margin-top: 1em;
+}
+
+div.week-title {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+div.lecture {
+    margin-bottom: 2em;
+}
+
+div.lecture-part {
+    margin-bottom: .5em;
+}
+
+div.page-title {
+    font-size: 40pt;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+div.lecture-crumbs {
+    margin-bottom: 1em;
+}
+
+div.lecture-crumb {
+    font-size: 10pt;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 10pt;
+}
+
+#class-questions {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 1em;
+}
+
+.description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.highlight {
+    font-weight: bold;
+    font-style: oblique;
+}
+
+div#intro {
+    margin-top: 10%;
+}
+
+dt.section {
+    text-align: left;
+    padding-right: 0;
+}
+
+@media (min-width: 767px) {
+    dt.section{
+        text-align: right;
+    }
+}
+
+.compact {
+}
+
+span.attention {
+    font-style: italic;
+}
+
+span.pubtitle {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+table.points tr td {
+    padding: 10px;
+}
+
+table.schedule tr td {
+    padding: 10px;
+}
+
+table.table-links td {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+table {
+    text-align: left;
+}
+
+h1, h2 {
+    margin-top: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Helvetica", Sans;
+    font-weight: bold;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -5em;
+    visibility: hidden;
+}

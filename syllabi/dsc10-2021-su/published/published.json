@@ -1,0 +1,995 @@
+{
+    "collections": {
+        "lectures": {
+            "schema": {
+                "required_artifacts": [
+                    "blank/export.zip",
+                    "filled/export.zip"
+                ],
+                "optional_artifacts": [
+                    "slides.pdf"
+                ],
+                "metadata_schema": {
+                    "number": {
+                        "type": "integer"
+                    },
+                    "date": {
+                        "type": "smartdate"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "reading": {
+                        "type": "dict",
+                        "required": false,
+                        "schema": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "videos": {
+                        "type": "list",
+                        "schema": {
+                            "type": "dict",
+                            "schema": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "number": 1,
+                        "title": "Introduction",
+                        "date": "2021-06-27 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Introduction",
+                                "url": "https://www.youtube.com/watch?v=H83mCDsT-Ak"
+                            },
+                            {
+                                "title": "Syllabus",
+                                "url": "https://youtu.be/0Ki57v2gEeY"
+                            },
+                            {
+                                "title": "Causality",
+                                "url": "https://youtu.be/DNnagCkxeYw"
+                            }
+                        ],
+                        "reading": {
+                            "title": "Chapters 1.1 and 1.2",
+                            "url": "https://eldridgejm.github.io/dive_into_data_science/01-getting_started/tools.html"
+                        }
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/01-intro/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/01-intro/filled/export.zip"
+                        },
+                        "slides.pdf": {
+                            "path": "lectures/01-intro/slides.pdf"
+                        }
+                    }
+                },
+                "02-expressions_types": {
+                    "metadata": {
+                        "number": 2,
+                        "title": "Basic Python",
+                        "date": "2021-06-27 00:00:00",
+                        "videos": [
+                            {
+                                "title": "First Python Code",
+                                "url": "https://youtu.be/qiGAZPEu7CM"
+                            },
+                            {
+                                "title": "Types",
+                                "url": "https://youtu.be/O_P5RjaDQdo"
+                            },
+                            {
+                                "title": "Submitting Assignments",
+                                "url": "https://youtu.be/tNuZe6iAPF0"
+                            }
+                        ],
+                        "reading": {
+                            "title": "Chapters 1.3-1.6",
+                            "url": "https://eldridgejm.github.io/dive_into_data_science/01-getting_started/expressions.html"
+                        }
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/02-expressions_types/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/02-expressions_types/filled/export.zip"
+                        }
+                    }
+                },
+                "03-tables": {
+                    "metadata": {
+                        "number": 3,
+                        "title": "Arrays and Tables",
+                        "date": "2021-06-27 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Arrays",
+                                "url": "https://youtu.be/PnBzu02fGJ0"
+                            },
+                            {
+                                "title": "Tables",
+                                "url": "https://youtu.be/ZRI3Zlc2D9g"
+                            }
+                        ],
+                        "reading": {
+                            "title": "Chapters 2.1-2.3",
+                            "url": "https://eldridgejm.github.io/dive_into_data_science/02-data_sets/arrays.html"
+                        }
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/03-tables/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/03-tables/filled/export.zip"
+                        }
+                    }
+                },
+                "04-queries_groupby": {
+                    "metadata": {
+                        "number": 4,
+                        "title": "Querying and Groupby",
+                        "date": "2021-06-27 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Querying (Boolean Indexing)",
+                                "url": "https://www.youtube.com/watch?v=etx5Pz1JPw8"
+                            },
+                            {
+                                "title": "GroupBy",
+                                "url": "https://www.youtube.com/watch?v=MH3-_OCOGDQ"
+                            }
+                        ],
+                        "reading": {
+                            "title": "Chapters 2.4 and 2.5",
+                            "url": "https://eldridgejm.github.io/dive_into_data_science/02-data_sets/querying.html"
+                        }
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/04-queries_groupby/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/04-queries_groupby/filled/export.zip"
+                        }
+                    }
+                },
+                "05-visualization": {
+                    "metadata": {
+                        "number": 5,
+                        "title": "Plotting",
+                        "date": "2021-07-04 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Intro",
+                                "url": "https://youtu.be/5Qcmomap47c"
+                            },
+                            {
+                                "title": "Scatter Plots",
+                                "url": "https://youtu.be/2THOnNQOGQw"
+                            },
+                            {
+                                "title": "Line Plots",
+                                "url": "https://youtu.be/Oobjl8Qx3e4"
+                            },
+                            {
+                                "title": "Bar Graphs",
+                                "url": "https://youtu.be/02HkbPPQEhA"
+                            },
+                            {
+                                "title": "Histograms",
+                                "url": "https://youtu.be/BuMjvOk8JSs"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/05-visualization/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/05-visualization/filled/export.zip"
+                        }
+                    }
+                },
+                "06-functions_apply": {
+                    "metadata": {
+                        "number": 6,
+                        "title": "Overlaying Plots, Functions, Apply",
+                        "date": "2021-07-04 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Overlaid Plots",
+                                "url": "https://youtu.be/S2enqP2TQEU"
+                            },
+                            {
+                                "title": "Functions",
+                                "url": "https://youtu.be/yXr6McJO1e8"
+                            },
+                            {
+                                "title": "Apply",
+                                "url": "https://youtu.be/sbkpXSJIBK4"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/06-functions_apply/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/06-functions_apply/filled/export.zip"
+                        }
+                    }
+                },
+                "07-group_merge_conditionals_iteration": {
+                    "metadata": {
+                        "number": 7,
+                        "title": "Group, Merge, Conditionals, Iteration",
+                        "date": "2021-07-04 00:00:00",
+                        "videos": [
+                            {
+                                "title": "More GroupBy",
+                                "url": "https://youtu.be/xZ5HgJjUvJ0"
+                            },
+                            {
+                                "title": "Merge",
+                                "url": "https://youtu.be/jboCG36oXe8"
+                            },
+                            {
+                                "title": "Conditionals and Iteration",
+                                "url": "https://youtu.be/jiZzL1apMlE"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/07-group_merge_conditionals_iteration/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/07-group_merge_conditionals_iteration/filled/export.zip"
+                        }
+                    }
+                },
+                "08-simulation": {
+                    "metadata": {
+                        "number": 8,
+                        "title": "Probability and Sampling",
+                        "date": "2021-07-04 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Probability",
+                                "url": "https://youtu.be/Ly7DmcsVBmA"
+                            },
+                            {
+                                "title": "np.random.choice",
+                                "url": "https://youtu.be/HRicFb-Yy8s"
+                            },
+                            {
+                                "title": "Simulation",
+                                "url": "https://youtu.be/3vvI5G6BMts"
+                            },
+                            {
+                                "title": "Monty Hall",
+                                "url": "https://youtu.be/nTFFcBu7Aj0"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/08-simulation/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/08-simulation/filled/export.zip"
+                        }
+                    }
+                },
+                "09-sampling": {
+                    "metadata": {
+                        "number": 9,
+                        "title": "Sampling",
+                        "date": "2021-07-11 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Sampling",
+                                "url": "https://youtu.be/JOysFpWBWvA"
+                            },
+                            {
+                                "title": "Distributions",
+                                "url": "https://youtu.be/KWoFEvcu1iM"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/09-sampling/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/09-sampling/filled/export.zip"
+                        }
+                    }
+                },
+                "10-models_and_statistics": {
+                    "metadata": {
+                        "number": 10,
+                        "title": "Models",
+                        "date": "2021-07-11 00:00:00",
+                        "videos": [
+                            {
+                                "title": "German Plane Problem",
+                                "url": "https://youtu.be/OkcaHPrhhfQ"
+                            },
+                            {
+                                "title": "Racially Biased Jury Panel",
+                                "url": "https://youtu.be/Wvnr0V0bQh8"
+                            },
+                            {
+                                "title": "Mendel's Peas",
+                                "url": "https://youtu.be/V3-yofcDMyI"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/10-models_and_statistics/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/10-models_and_statistics/filled/export.zip"
+                        }
+                    }
+                },
+                "11-hypothesis_testing": {
+                    "metadata": {
+                        "number": 11,
+                        "title": "Hypothesis Testing",
+                        "date": "2021-07-11 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Test Statistics",
+                                "url": "https://youtu.be/_4QJSuUGF48"
+                            },
+                            {
+                                "title": "Total Variation Distance",
+                                "url": "https://youtu.be/2nuQmAQcfmA"
+                            },
+                            {
+                                "title": "Hypothesis Testing and p-Values",
+                                "url": "https://www.youtube.com/watch?v=Jbgl-ON4OpE"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/11-hypothesis_testing/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/11-hypothesis_testing/filled/export.zip"
+                        }
+                    }
+                },
+                "12-ab_testing": {
+                    "metadata": {
+                        "number": 12,
+                        "title": "A/B Testing",
+                        "date": "2021-07-11 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Permutation Tests",
+                                "url": "https://youtu.be/MYIgozZNHqk"
+                            },
+                            {
+                                "title": "Deflategate",
+                                "url": "https://youtu.be/gpZQT0bymaU"
+                            },
+                            {
+                                "title": "Causality",
+                                "url": "https://youtu.be/e75vwJaE65E"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/12-ab_testing/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/12-ab_testing/filled/export.zip"
+                        }
+                    }
+                },
+                "13-bootstrap": {
+                    "metadata": {
+                        "number": 13,
+                        "title": "The Bootstrap",
+                        "date": "2021-07-18 00:00:00",
+                        "videos": [
+                            {
+                                "title": "The Bootstrap",
+                                "url": "https://youtu.be/UA3BaNcUgi8"
+                            },
+                            {
+                                "title": "Bootstrapped Confidence Intervals",
+                                "url": "https://youtu.be/mv-soTb_fu8"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/13-bootstrap/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/13-bootstrap/filled/export.zip"
+                        }
+                    }
+                },
+                "14-ci_mean_spread": {
+                    "metadata": {
+                        "number": 14,
+                        "title": "CIs, Mean, Spread",
+                        "date": "2021-07-18 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Bootstrap Review",
+                                "url": "https://youtu.be/5Z-G7vte3kU"
+                            },
+                            {
+                                "title": "CIs and Testing",
+                                "url": "https://youtu.be/hxnZtV0HbH0"
+                            },
+                            {
+                                "title": "Mean and Spread",
+                                "url": "https://youtu.be/yoolO7P1qhg"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/14-ci_mean_spread/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/14-ci_mean_spread/filled/export.zip"
+                        }
+                    }
+                },
+                "15-clt": {
+                    "metadata": {
+                        "number": 15,
+                        "title": "The Normal Distribution",
+                        "date": "2021-07-18 00:00:00",
+                        "videos": [
+                            {
+                                "title": "The Normal Curve",
+                                "url": "https://youtu.be/eHMdyZ7vg_Y"
+                            },
+                            {
+                                "title": "The Central Limit Theorem",
+                                "url": "https://youtu.be/dB50PhIsZpQ"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/15-clt/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/15-clt/filled/export.zip"
+                        }
+                    }
+                },
+                "16-normal_ci": {
+                    "metadata": {
+                        "number": 16,
+                        "title": "Normal Confidence Intervals",
+                        "date": "2021-07-18 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Recap of CLT",
+                                "url": "https://youtu.be/k1sBFHywk2M"
+                            },
+                            {
+                                "title": "Normal CIs",
+                                "url": "https://youtu.be/iLoDYe4_Du4"
+                            },
+                            {
+                                "title": "CLT and Hypothesis Testing",
+                                "url": "https://youtu.be/0ADUGVNxglY"
+                            },
+                            {
+                                "title": "Experiment Design",
+                                "url": "https://youtu.be/30MgO9DMYpk"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/16-normal_ci/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/16-normal_ci/filled/export.zip"
+                        }
+                    }
+                },
+                "17-regression": {
+                    "metadata": {
+                        "number": 17,
+                        "title": "Regression",
+                        "date": "2021-07-25 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Prediction",
+                                "url": "https://youtu.be/fqz3ks4InpU"
+                            },
+                            {
+                                "title": "Correlation",
+                                "url": "https://youtu.be/s4KeLovok0c"
+                            },
+                            {
+                                "title": "Regression",
+                                "url": "https://youtu.be/4OwfQvp2YG4"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/17-regression/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/17-regression/filled/export.zip"
+                        }
+                    }
+                },
+                "18-more_regression": {
+                    "metadata": {
+                        "number": 18,
+                        "title": "More Regression",
+                        "date": "2021-07-25 00:00:00",
+                        "videos": [
+                            {
+                                "title": "Root Mean Squared Error",
+                                "url": "https://youtu.be/UFzrmQdJID4"
+                            },
+                            {
+                                "title": "Residuals",
+                                "url": "https://youtu.be/OYG_KC4-Ceg"
+                            },
+                            {
+                                "title": "Confidence",
+                                "url": "https://youtu.be/V1dy5md7jVY"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "blank/export.zip": {
+                            "path": "lectures/18-more_regression/blank/export.zip"
+                        },
+                        "filled/export.zip": {
+                            "path": "lectures/18-more_regression/filled/export.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "discussions": {
+            "schema": {
+                "required_artifacts": [
+                    "export.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "number": {
+                        "type": "integer"
+                    },
+                    "datetime": {
+                        "type": "smartdate"
+                    },
+                    "recording": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-python_basics_arrays_tables": {
+                    "metadata": {
+                        "number": 1,
+                        "datetime": "2021-07-01 13:00:00",
+                        "recording": "https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_e7Eh6E0ilNpyJ7E-2D2yJF42Aha-2D-2DF48qSyVPohGmu7dWvjH2thHDXSPSyFEmuie-2DQ.xCvWRhkD-5FaAUT6Xl&d=DwQFaQ&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=dg0JeP6JKwS2zOEavNw8MbSeHu4bsRHEB3ehnVl7W5U&s=jvtFTuUJ9fj0vqJEYRZ5GHLphx0v5sBkQYe1GgFFf1M&e="
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "discussions/01-python_basics_arrays_tables/export.zip"
+                        }
+                    }
+                },
+                "02-plotting_sim_midterm_review": {
+                    "metadata": {
+                        "number": 2,
+                        "datetime": "2021-07-08 13:00:00",
+                        "recording": "https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_UKAelwoKaF98KvgSoYXydS-5Fxp3ExYvczCuT0C8UeiceoQkyaLOcvWk6YfFxWtxI.TULE9j5T86Svcx4j&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=Ux_uteYerxbI-8cTpJzgUPy9_j45oOXrGmqrY1sh5sY&s=1uYjTxrJOBV3tgND3EsxXlObNa64kQUVLFPyhuu7GB0&e="
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "discussions/02-plotting_sim_midterm_review/export.zip"
+                        }
+                    }
+                },
+                "03-hypo_perm_testing": {
+                    "metadata": {
+                        "number": 3,
+                        "datetime": "2021-07-15 13:00:00",
+                        "recording": "https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_ExRDsF9fBsfkas-2DFg-5F9f20xkRKJfPYSayzDSO5Ac55rfXVDzjARBwv45NuegF-2Do5.hI1dhSUth4QpzJ3x&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=iY-Upf25rGr_Xo3uD0CTv4rwSO7vx9_oT24owf6NjDk&s=T8UQCDKdPQ4hCKu87DOties70brXreloaJPbNYci0zE&e="
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "discussions/03-hypo_perm_testing/export.zip"
+                        }
+                    }
+                },
+                "04- CI_normal_CLT": {
+                    "metadata": {
+                        "number": 4,
+                        "datetime": "2021-07-22 13:00:00",
+                        "recording": "https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_MnkTYbYaNQyWtmu2DJh9vuqwY4-5FqUUAB2hWmphjNbXbmABlMey5GwB1JDXGMyOEK.6MtiIYMzwilIX8qd&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=DK8N6-L3Zr0mfckw1hk7UqwvftlxC5k-PXjwqDFBKOI&s=ECSwlCfAAjj-TVgzfJjn9q6ga-kq9afhmA3WTghoMPc&e="
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "discussions/04- CI_normal_CLT/export.zip"
+                        }
+                    }
+                },
+                "05-final_review": {
+                    "metadata": {
+                        "number": 5,
+                        "datetime": "2021-07-29 13:00:00",
+                        "recording": "https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_TSUvLU7HJMAabUi4De0sXDXlGg7L9wLLF7ARQUKEC8vP9XbqFTIr2pY9unSiYfHW.Pjonn83Xy99jR-2Dr-2D&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=kYkm9Hxe6J0kSudzg7G1qJ5dAL4E24eXzULkST9qVAw&s=GA4-lCZoM0Z_FMZMLyl--5Y7CzUyuYOZZmnBXH9UVSc&e="
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "discussions/05-final_review/export.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "labs": {
+            "schema": {
+                "required_artifacts": [
+                    "export.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "number": {
+                        "type": "integer"
+                    },
+                    "released": {
+                        "type": "smartdatetime"
+                    },
+                    "due": {
+                        "type": "smartdatetime"
+                    },
+                    "topics": {
+                        "type": "string"
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-python_basics": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2021-06-27 00:00:00",
+                        "due": "2021-07-01 23:59:00",
+                        "topics": "lectures 01 and 02"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/01-python_basics/export.zip"
+                        }
+                    }
+                },
+                "02-arrays_tables": {
+                    "metadata": {
+                        "number": 2,
+                        "released": "2021-06-27 00:00:00",
+                        "due": "2021-07-03 23:59:00",
+                        "topics": "lectures 03 and 04"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/02-arrays_tables/export.zip"
+                        }
+                    }
+                },
+                "03-apply_vis": {
+                    "metadata": {
+                        "number": 3,
+                        "released": "2021-07-04 00:00:00",
+                        "due": "2021-07-07 23:59:00",
+                        "topics": "lectures 05 and 06"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/03-apply_vis/export.zip"
+                        }
+                    }
+                },
+                "04-conditionals_iteration": {
+                    "metadata": {
+                        "number": 4,
+                        "released": "2021-07-04 00:00:00",
+                        "due": "2021-07-10 23:59:00",
+                        "topics": "lectures 07 and 08"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/04-conditionals_iteration/export.zip"
+                        }
+                    }
+                },
+                "05-hypothesis_testing": {
+                    "metadata": {
+                        "number": 5,
+                        "released": "2021-07-11 00:00:00",
+                        "due": "2021-07-17 23:59:00",
+                        "topics": "lectures 09-12"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/05-hypothesis_testing/export.zip"
+                        }
+                    }
+                },
+                "06-resampling_and_the_bootstrap": {
+                    "metadata": {
+                        "number": 6,
+                        "released": "2021-07-18 00:00:00",
+                        "due": "2021-07-21 23:59:00",
+                        "topics": "lectures 13 and 14"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/06-resampling_and_the_bootstrap/export.zip"
+                        }
+                    }
+                },
+                "07-why_the_mean_matters_in_school_life": {
+                    "metadata": {
+                        "number": 7,
+                        "released": "2021-07-18 00:00:00",
+                        "due": "2021-07-24 23:59:00",
+                        "topics": "lectures 15 and 16"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/07-why_the_mean_matters_in_school_life/export.zip"
+                        }
+                    }
+                },
+                "08-regression": {
+                    "metadata": {
+                        "number": 8,
+                        "released": "2021-07-25 00:00:00",
+                        "due": "2021-07-28 23:59:00",
+                        "topics": "lectures 17 and 18"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "labs/08-regression/export.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "projects": {
+            "schema": {
+                "required_artifacts": [
+                    "export.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "number": {
+                        "type": "integer"
+                    },
+                    "released": {
+                        "type": "smartdatetime"
+                    },
+                    "due": {
+                        "type": "smartdatetime"
+                    },
+                    "topics": {
+                        "type": "string"
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-chicago_taxis": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2021-07-04 00:00:00",
+                        "due": "2021-07-12 23:59:00",
+                        "topics": "lectures 01 through 07"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "projects/01-chicago_taxis/export.zip"
+                        }
+                    }
+                },
+                "02-meteorite_landings": {
+                    "metadata": {
+                        "number": 2,
+                        "released": "2021-07-25 00:00:00",
+                        "due": "2021-07-31 23:59:00",
+                        "topics": "lectures 01 through 16"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "projects/02-meteorite_landings/export.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "homeworks": {
+            "schema": {
+                "required_artifacts": [
+                    "export.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "number": {
+                        "type": "integer"
+                    },
+                    "released": {
+                        "type": "smartdatetime"
+                    },
+                    "due": {
+                        "type": "smartdatetime"
+                    },
+                    "topics": {
+                        "type": "string"
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-python_basics": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2021-06-27 00:00:00",
+                        "due": "2021-07-02 23:59:00",
+                        "topics": "lectures 01 and 02"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/01-python_basics/export.zip"
+                        }
+                    }
+                },
+                "02-arrays_tables": {
+                    "metadata": {
+                        "number": 2,
+                        "released": "2021-06-27 00:00:00",
+                        "due": "2021-07-05 23:59:00",
+                        "topics": "lectures 03 and 04"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/02-arrays_tables/export.zip"
+                        }
+                    }
+                },
+                "03-functions": {
+                    "metadata": {
+                        "number": 3,
+                        "released": "2021-07-04 00:00:00",
+                        "due": "2021-07-09 23:59:00",
+                        "topics": "lectures 05 and 06"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/03-functions/export.zip"
+                        }
+                    }
+                },
+                "04-simulation": {
+                    "metadata": {
+                        "number": 4,
+                        "released": "2021-07-11 00:00:00",
+                        "due": "2021-07-16 23:59:00",
+                        "topics": "lectures 09 and 10"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/04-simulation/export.zip"
+                        }
+                    }
+                },
+                "05-hypothesis": {
+                    "metadata": {
+                        "number": 5,
+                        "released": "2021-07-11 00:00:00",
+                        "due": "2021-07-19 23:59:00",
+                        "topics": "lectures 11 and 12"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/05-hypothesis/export.zip"
+                        }
+                    }
+                },
+                "06-bootstrap": {
+                    "metadata": {
+                        "number": 6,
+                        "released": "2021-07-18 00:00:00",
+                        "due": "2021-07-23 23:59:00",
+                        "topics": "lectures 13 and 14"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/06-bootstrap/export.zip"
+                        }
+                    }
+                },
+                "07-confidence_intervals": {
+                    "metadata": {
+                        "number": 7,
+                        "released": "2021-07-18 00:00:00",
+                        "due": "2021-07-26 23:59:00",
+                        "topics": "lectures 15 and 16"
+                    },
+                    "artifacts": {
+                        "export.zip": {
+                            "path": "homeworks/07-confidence_intervals/export.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "default": {
+            "schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {
+                "reference": {
+                    "metadata": {},
+                    "artifacts": {
+                        "reference.pdf": {
+                            "path": "default/reference/reference.pdf"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

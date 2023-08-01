@@ -1,0 +1,1981 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./static/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Fira+Sans|Noto+Serif+JP|Roboto+Slab&display=swap" rel="stylesheet">
+
+        <title>CSE 151A — Spring 2020</title>
+    </head>
+    <body class="text-md-left">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="page-title" style="margin-bottom: .5em">
+    <img src="./static/course-title.svg?cse-151a">
+</div>
+
+<div class="list-group list-group-horizontal-md h-30" style="text-align: center">
+  <a href="./syllabus.html" class="list-group-item list-group-item-action">
+    <i class="em em-blue_book" aria-role="presentation" aria-label="BLUE BOOK"></i>
+    &nbsp;
+    Syllabus
+    <br>
+    <small class="text-muted">FAQ, etc.
+    </small>
+  </a>
+  <a href="./office_hours.html" class="list-group-item list-group-item-action">
+    <i class="em-svg em-hourglass_flowing_sand" aria-role="presentation" aria-label="HOURGLASS WITH FLOWING SAND"></i>
+    &nbsp;
+    Office Hours
+    <br>
+    <small class="text-muted">
+    Calendar
+    </small>
+  </a>
+  <a href="https://campuswire.com/c/GD09972CF" class="list-group-item list-group-item-action" target="_blank">
+    <i class="em em-mega" aria-role="presentation" aria-label="CHEERING MEGAPHONE"></i>
+    &nbsp;
+    Campuswire
+    <br>
+    <small class="text-muted">access code: 7739</small>
+  </a>
+  <a href="https://www.gradescope.com/courses/107291" class="list-group-item list-group-item-action">
+    <i class="em em-bar_chart" aria-role="presentation" aria-label="BAR CHART"></i>
+    &nbsp;
+    Gradescope
+    <br>
+    <small class="text-muted">access code: 92YJDK</small>
+  </a>
+</div>
+
+<div class="alert alert-primary" style="margin-top: 2em">
+
+<h3>Redemption Exams</h3>
+
+<p>
+The redemption exams will be available on <b>Wednesday, June 10</b> as quizzes on
+Canvas. As with the midterms, you will be able to start the quiz at any time on
+that day. Each redemption exam will be its own quiz, and you'll be able to take
+one, both, or neither of them. Your score on the redemption exam will replace
+your score on the corresponding midterm only if it is higher (and so the
+redemption exams are effectively optional).
+</p>
+
+<p>
+Each quiz will have its own independent <b>time limit of 1 hour and 30 minutes</b>. The
+syllabus originally stated that you will be given 4 hours for the final exam,
+but I've been made aware of a university rule saying that online exams must be 3
+hours or less. In light of this, I'm going to make the redemption exams a little
+shorter than the midterms so that you should have ample time to complete them.
+While you will have 1.5 hours for each exam, they will be designed to take less
+than 1 hour.
+</p>
+
+<p>
+Midterm <b>review videos</b> are available below:
+<ul>
+<li>
+    <a href="https://www.youtube.com/watch?v=01dpd2v8LS0">Midterm 01</a>
+</li>
+<li>
+    <a href="https://www.youtube.com/watch?v=87ct5Un9qiw">Midterm 02</a>
+</li>
+</ul>
+Reviewing these videos is considered excellent preparation for the redemption
+exams.
+<p>
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 10 — Representation Learning, pt. II
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 19 — PCA, pt. II </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 25 at 3:00 PM PST
+            </div>
+
+
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/18-pca/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=fsbrWXlxFcg">Ending the Quarter</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=J2zIf07skys">PCA in Many Dimensions</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=P-aQbH4Ygc4">Demos (Video)</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 20 — Recap </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 27 at 3:00 PM PST
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=vIpyKXFO1vA">Recap</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=zF7_KwXHvAA">How did you get into ML/DS?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=iNWRGGLo5Hc">Do I need an MS/PhD to do ML?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>04</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=V5q9uGORFEs">How do I start an ML project?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>05</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=oyuFwv6CypE">What is the difference between AI/ML/DS/Stats?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>06</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=MYYJ382-q6M">Thank You</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/09-plus/build/homework.pdf">
+                Homework 09
+            </a>
+
+
+
+            and
+            <a href="homeworks/09-plus/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/10-review/build/discussion.pdf">
+                Discussion 10
+            </a>
+
+
+
+            and
+            <a href="discussions/10-review/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/5OdXE5Wo83tOTpH2ymz7a4gEE7W4aaa8hCAf-_UJnUkgpRkVkR3iI8ft4Kgp9F0h?startTime=1591394462000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 09 — Representation Learning, pt. I
+        </h1>
+
+
+        <div class="alert alert-danger"> Midterm 02 will be on Friday, May 29. </div>
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 17 — PCA, pt. I </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 27 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    14.5.1
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/17-eigen/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=JxDRXHiyhIU">Dimensionality Reduction</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=62bxBN_xE1o">PCA</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+        No homework this week.
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/09-eigen/build/discussion.pdf">
+                Discussion 09
+            </a>
+
+
+
+            and
+            <a href="discussions/09-eigen/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/-9FPd4PdxDlJaYXTsmWGS_IjQKTreaa80yhI_fUOyUqMN_mDRzLDEUscJBvucvab?startTime=1590789626000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 08 — Clustering
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 15 — k-Means </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 18 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    14.3.6
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/15-clustering/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=kCZjmaFMkQU">Unsupervised Learning</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=4J0kJYKx5yo">k-Means</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 16 — EM and Hierarchical Clustering </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 20 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    14.3.12
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/16-em-hierarchical/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=GjobWsuSho8">Mixtures of Gaussians</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/ECH0yRlvWJA">Hierarchical Clustering</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=K8mejJooNJo">Density Cluster Trees</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/08-em_hierarchical_clustering/build/homework.pdf">
+                Homework 08
+            </a>
+
+
+
+            and
+            <a href="homeworks/08-em_hierarchical_clustering/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/08-clustering/build/discussion.pdf">
+                Discussion 08
+            </a>
+
+
+
+            and
+            <a href="discussions/08-clustering/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/tdxtf-3R0XpJH43h92bZSrQkHKS6aaa81SYf-KcJyxwSwhDXiCm6SAetXPxI-rQg?startTime=1590184853000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 07 — Trees and Forests
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 13 — Decision Trees </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 11 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    9.2
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/13-decision_trees/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=cEH6cf8jrIU">Decision Trees</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=BzNSLw1cXt4">Overfitting</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 14 — Boosting and Random Forests </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 13 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    10, 15
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/14-boosting/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=Rd1Cmmf8Y0I&feature=youtu.be">Boosting</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=Nh_4__k07vg&feature=youtu.be">Random Forests</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/07-decision_trees/build/homework.pdf">
+                Homework 07
+            </a>
+
+
+
+            and
+            <a href="homeworks/07-decision_trees/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/07-trees/build/discussion.pdf">
+                Discussion 07
+            </a>
+
+
+
+            and
+            <a href="discussions/07-trees/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/xfxIbJuzyVtIZaPB91HaaPc5N5bUX6a80SQe-_EKnUZVnp_wVneqVJpLhbjQpeE2?startTime=1589580108000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 06 — Linear Prediction, pt. II
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 11 — Perceptrons </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 4 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    4.5, 12.1, 12.2
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/11-perceptron/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=jlK6RhKU8_c">Stochastic Gradient Descent</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=JueYyAtXfdo">Perceptrons</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=w9triE3FTNc">Demo (Video)</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>04</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="http://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fucsd-ets%2Fcse151a-2020-sp-public&urlpath=tree%2Fcse151a-2020-sp-public%2Fdemos%2F04-perceptrons">Demo (Notebook)</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 12 — Support Vector Machines </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on May 6 at 3:00 PM PST
+            </div>
+
+
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/12-svm/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=cjLJJ4RvC28">SVMs</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=az6kVoXrMwU">Soft-Margin SVM</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=QZZZ9uzuvoE">Sentiment Analysis</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/06-perceptrons-svm/build/homework.pdf">
+                Homework 06
+            </a>
+
+
+
+            and
+            <a href="homeworks/06-perceptrons-svm/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/06-linear_prediction-II/build/discussion.pdf">
+                Discussion 06
+            </a>
+
+
+
+            and
+            <a href="discussions/06-linear_prediction-II/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/3up0A_asyiRObrfy0xDZRL8tR7vLaaa8hHQW-PsNxB2sVElPzW622BsS5DlYcQFM?startTime=1588975222000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 05 — Gradient Descent
+        </h1>
+
+
+        <div class="alert alert-danger"> Midterm 01 will be on Friday, May 01. </div>
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 09 — Gradient Descent </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 27 at 3:00 PM PST
+            </div>
+
+
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/09-gradient_descent/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=TTclzmJFORY">About the Midterm</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=MN-Xnz3cCn8">Motivating Gradient Descent</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=071H48LINoE">Logistic Regression</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>04</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=AbyEZDqzJQU">Heart Disease Prediction</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>05</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="http://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fucsd-ets%2Fcse151a-2020-sp-public&urlpath=tree%2Fcse151a-2020-sp-public%2Fdemos%2F03-gradient_descent">Demo Notebook</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 10 — Convexity </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 29 at 3:00 PM PST
+            </div>
+
+
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/10-convexity/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=jYstC6JiMbk">When does gradient descent work?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=-hYHrSyi70A">Convexity in many dimensions</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=3WS-7-5WHao">Convexity and Loss Functions</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/05-gradient_descent/build/homework.pdf">
+                Homework 05
+            </a>
+
+
+
+            and
+            <a href="homeworks/05-gradient_descent/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/05-optimization/build/discussion.pdf">
+                Discussion 05
+            </a>
+
+
+
+            and
+            <a href="discussions/05-optimization/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/69J3IJrp8WlJfo3U0F7Ff_cEJIHmaaa80ChP__QExUwPQDmjPwEbfl8PgmpACTvT?startTime=1588370476000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 04 — Linear Prediction, pt. I
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 07 — Multivariate Linear Regression </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 20 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    3.2.3, 3.2.4, 3.4
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/07-linear_regression-II/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=TtD_vixD1hk">Basic Linear Algebra</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=r4YCGyyPGPs">Setup</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=ZxLWaXgyqRM">The Gradient</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>04</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=KJ-yZKE-Ocw">Intepretation</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 08 — Logistic Regression </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 22 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    4.4
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/08-regularization-logistic_regression/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=Aw0vwXIVuYU&feature=youtu.be">Model Complexity</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=XSSZhPlO70s&feature=youtu.be">Logistic Regression Derivation</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/04-multivariate_linear-logistic_regression/build/homework.pdf">
+                Homework 04
+            </a>
+
+
+
+            and
+            <a href="homeworks/04-multivariate_linear-logistic_regression/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/04-logistic/build/discussion.pdf">
+                Discussion 04
+            </a>
+
+
+
+            and
+            <a href="discussions/04-logistic/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/1-FUM6zQ6j1JHYn85FjPVII5EIvVaaa8gShN_vELmhsvOOK6C8aPac3U96KSmJFd?startTime=1587765678000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 03 — Generative Models, pt. II
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 05 — Naive Bayes </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 13 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    6.6.3
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/05-naive_bayes/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=-mtzVwKoVc0">What is Conditional Independence?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=Z8TlIoQ7Z4g">How Conditional Independence Helps</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=GO32pKHPNLo">The Titanic</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 06 — Loss Functions and Simple Linear Regression </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 15 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    2.3.1, 3.2.1, 3.2.2
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/06-linear_regression-I/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=Ppbm1ecgJig">Regression and Loss Functions</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=2qmKtr_ma_s">Minimizing the MSE</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://www.youtube.com/watch?v=EtePjscwr3w">Fitting Non-Linear Trends</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/03-naive_bayes-regression/build/homework.pdf">
+                Homework 03
+            </a>
+
+
+
+            and
+            <a href="homeworks/03-naive_bayes-regression/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/03-naive_bayes-loss/build/discussion.pdf">
+                Discussion 03
+            </a>
+
+
+
+            and
+            <a href="discussions/03-naive_bayes-loss/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday, 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/_pxtMJD69llIRJ3UtVrcBb8CH4DgT6a80yMdqPQOzU34gXbpW8gYQsRJ3RCWwJvg?startTime=1587160854000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 02 — Generative Models, pt. I
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 03 — Bayes Decision Theory </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 06 at 3:00 PM PST
+            </div>
+
+
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/03-generative_models/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/qYt9FTfCxJM">The Probabilistic View</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/6R2TNOWBGj4">Estimating Probabilities</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/V8m8YIFmyME">Using the Bayes Classifier</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 04 — Multivariate Generative Models </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 08 at 3:00 PM PST
+            </div>
+
+
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/04-multivariate_generative_models/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/6CYBw7kpI_g">Bayes with Multiple Features</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/0J6Z4uF_H-U">Multivariate Gaussians</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/uingeK1wRdA">Discriminant Analysis</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/02-generative_models/build/homework.pdf">
+                Homework 02
+            </a>
+
+
+
+            and
+            <a href="homeworks/02-generative_models/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/02-generative_models/build/discussion.pdf">
+                Discussion 02
+            </a>
+
+
+
+            and
+            <a href="discussions/02-generative_models/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday, 3:00 PM <br> <a href="https://ucsd.zoom.us/my/lukerohrer">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/3NcyaLLQ5j5LXYmRuUjZcPcqR7q8X6a81HQX-_RYyki4eto0wOodPuuMrPDpurkF?startTime=1586556085000"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="row week">
+
+    <div class="col-md-12 week-title">
+        <h1>
+            Week 01 — Introduction and kNN
+        </h1>
+
+
+
+    </div>
+
+    <div class="col-md-6 lectures text-left">
+
+
+
+
+    <div class="lecture">
+        <h5>Lecture 01 — Introduction </h5>
+
+        <div class="lecture-crumbs">
+
+
+
+
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/GgZdjiTqp2c">Introduction</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/JwwIM14VenM">The Syllabus</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/I9BNnzzQG7I">Outro</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="lecture">
+        <h5>Lecture 02 — k-Nearest Neighbors </h5>
+
+        <div class="lecture-crumbs">
+
+            <div class="lecture-crumb">
+                <i class="em em-eyes" aria-role="presentation" aria-label="FACE WITH PARTY HORN AND PARTY HAT"></i>
+                &nbsp;
+                <a href="./syllabus.html#lectures">Watch Party</a> on April 1 at 3:00 PM PST
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+                &nbsp;
+                Recommended reading: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">
+    ESL
+    2.3, 7.10, 13.3
+</a>
+            </div>
+
+
+
+            <div class="lecture-crumb">
+                <i class="em em-film_frames" aria-role="presentation" aria-label=""></i>
+                &nbsp;
+                <a href="lectures/02-knn/build/lecture.pdf">Lecture slides</a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>01</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/6CBeGEP8y60">What is Machine Learning?</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>02</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/jcfLsAw_pBI">Prediction</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>03</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/3alHOxPH8Ic">kNN</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>04</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/GfPz8uZpM2w">Digit Classification</a></div>
+
+                <div class="col-md-1 text-nowrap" style="font-weight: normal; opacity: 20%">
+                    <small>05</small>
+                </div>
+                <div class="col-md-11 lecture-part"><a href="https://youtu.be/Fd3P59HdzvU">Practical Issues</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group">
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Homework</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="homeworks/01-knn/build/homework.pdf">
+                Homework 01
+            </a>
+
+
+
+            and
+            <a href="homeworks/01-knn/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+
+    </div>
+</li>
+
+
+
+
+<li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+    <h5>Discussion</h5>
+
+    <div style="text-align: left">
+
+
+
+
+            <a href="discussions/01-probability/build/discussion.pdf">
+                Discussion 01
+            </a>
+
+
+
+            and
+            <a href="discussions/01-probability/build/solution.pdf">
+                Solution
+            </a>
+
+
+
+            <br> Friday, 3:00 PM <br> <a href="https://ucsd.zoom.us/j/137934453">Zoom Link</a> and <a href="https://ucsd.zoom.us/rec/share/uZJrCIP_62JJcKPw90PvevUMMam1aaa8gSUd_vULxUnKaT3FH4mm60tnYxXsRo0K"> Recording </a>
+
+
+    </div>
+</li>
+
+
+
+
+
+                    <li class="list-group-item justify-content-between align-left align-items-center right-bar-item">
+                        <h5>Survey</h5>
+                        <div style="text-align: left">
+                            Please fill out this short <a href="https://forms.gle/kKx4sE5pUpenHoZD6">survey</a>.  Your responses are totally anonymous!
+                        </div>
+                    </li>
+
+
+        </ul>
+    </div>
+
+
+</div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>DSC 180</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 180</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><span class="">Home</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/c/GF415D4B3/feed"><span class="">Campuswire</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+
+                        <div class="site-title">
+                            <h1>DSC 180 &ndash; The Spread of Misinformation Online</h1>
+                            <hr>
+                        </div>
+
+
+                        <h1 id="week-02-getting-started">Week 02 - Getting Started</h1>
+<h2 id="topics">Topics</h2>
+<p>This week, we'll be introduced to the paper and prepare to collect a Twitter
+dataset. We'll:</p>
+<ul>
+<li>get set up to download data from the Twitter API;</li>
+<li>start reading the paper that we'll replicate.</li>
+</ul>
+<h2 id="readings">Readings</h2>
+<p>Please read the following before our next meeting:</p>
+<ul>
+<li>
+<p>To use the Twitter API, you must be approved for developer access. Read the
+instructions <a href="https://developer.twitter.com/en/apply-for-access">here</a> and apply
+for a single-user developer key. You will be asked several questions about how
+you will use the API; the approval process is done by humans, so the quality of
+your answers is very important. Here are some tips:</p>
+<ul>
+<li>We'll be using the API to study how the spread of scientific information
+  about COVID differs from the spread of misinformation about the virus.</li>
+<li>Use your UCSD email -- this gives your request more credibility.</li>
+<li>Mention that this is for a class, DSC 180, at UC San Diego. You can
+  include my name as well.</li>
+<li>Twitter may send a follow-up email asking for more information. You can
+  reply by paraphrasing the below:<ul>
+<li>The core use case is academic research in social network dynamics. We will be studying how the spread of misinformation surrounding COVID-19 differs from the spread of scientific information about the disease. This will be part of a senior capstone project at UC San Diego.</li>
+<li>We will analyze the content of tweets only to determine how URLs/hashtags are being shared. We will not be analyzing individual users as such. Our analysis will involve calculating the duration between the first time a URL is shared and the last. We will try to determine whether hashtags related to false information spread faster or slower than hashtags related to scientific information.</li>
+<li>We will not be posting, retweeting, or otherwise interacting with other user accounts. Our use of the API will be strictly read-only.</li>
+<li>Twitter content itself will not be displayed off twitter. Aggregated information about the dynamics of twitter conversation will be displayed in academic venues only.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Read about the Twitter API's <a href="https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases">restricted use
+  cases</a>.</p>
+</li>
+<li>
+<p>Read the survey article <a href="https://www.thefreelibrary.com/_/print/PrintArticle.aspx?id=306095073">Social media sway: worries over political
+  misinformation on Twitter attract scientists'
+  attention.</a></p>
+</li>
+<li>
+<p>Our paper this quarter will be <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196087">Anatomy of an online misinformation
+  network</a>.
+  For this week, read the "Introduction" and "Methods and Data" sections,
+  stopping before the results. We'll talk about the paper in our meeting, so
+  don't worry if it doesn't make complete sense yet.</p>
+</li>
+</ul>
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

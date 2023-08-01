@@ -1,0 +1,1097 @@
+{
+    "collections": {
+        "lectures": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "slides.pdf"
+                ],
+                "optional_artifacts": [
+                    "demo",
+                    "slides-marked.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "videos": {
+                            "type": "list",
+                            "element_schema": {
+                                "type": "dict",
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-intro": {
+                    "metadata": {
+                        "date": "2022-01-04",
+                        "number": 1,
+                        "topic": "Introduction and Review",
+                        "videos": [
+                            {
+                                "title": "Introduction and Syllabus",
+                                "url": "https://youtu.be/cL3frWQsN4g"
+                            },
+                            {
+                                "title": "Review of Time Complexity Analysis",
+                                "url": "https://youtu.be/VbUMkNk0T1o"
+                            },
+                            {
+                                "title": "Review of Arrays and Linked Lists",
+                                "url": "https://youtu.be/5ZbEG8Iebe8"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/01-intro/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/01-intro/slides-marked.pdf"
+                        }
+                    }
+                },
+                "02-dynamic_arrays": {
+                    "metadata": {
+                        "date": "2022-01-06",
+                        "number": 2,
+                        "topic": "Dynamic Arrays",
+                        "videos": [
+                            {
+                                "title": "More about Memory",
+                                "url": "https://youtu.be/5J6UlEdvDSk"
+                            },
+                            {
+                                "title": "Motivating Dynamic Arrays",
+                                "url": "https://youtu.be/Pi28WszvaZI"
+                            },
+                            {
+                                "title": "Amortized Analysis",
+                                "url": "https://youtu.be/7Jr3IFFsLgo"
+                            },
+                            {
+                                "title": "Practicalities",
+                                "url": "https://youtu.be/nWm4cfFzXRY"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/02-dynamic_arrays/slides.pdf"
+                        },
+                        "demo": {
+                            "path": "lectures/02-dynamic_arrays/demo"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/02-dynamic_arrays/slides-marked.pdf"
+                        }
+                    }
+                },
+                "03-heaps": {
+                    "metadata": {
+                        "date": "2022-01-11",
+                        "number": 3,
+                        "topic": "Heaps",
+                        "videos": [
+                            {
+                                "title": "Abstract Data Types",
+                                "url": "https://youtu.be/cXKhWPYgnCw"
+                            },
+                            {
+                                "title": "Priority Queues",
+                                "url": "https://youtu.be/vjMpzJbbvG4"
+                            },
+                            {
+                                "title": "Binary Heaps",
+                                "url": "https://youtu.be/h_8-O1G70ao"
+                            },
+                            {
+                                "title": "Example: Online Median",
+                                "url": "https://youtu.be/eJ_YYxUV5x8"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/03-heaps/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/03-heaps/slides-marked.pdf"
+                        }
+                    }
+                },
+                "04-bst": {
+                    "metadata": {
+                        "date": "2022-01-13",
+                        "number": 4,
+                        "topic": "Binary Search Trees",
+                        "videos": [
+                            {
+                                "title": "Dynamic Sets and Hashing",
+                                "url": "https://youtu.be/oIeMbGvP45k"
+                            },
+                            {
+                                "title": "Binary Search Trees",
+                                "url": "https://youtu.be/VPMif7nwruU"
+                            },
+                            {
+                                "title": "Range Queries in BSTs",
+                                "url": "https://youtu.be/VmSMsS0LzGY"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/04-bst/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/04-bst/slides-marked.pdf"
+                        }
+                    }
+                },
+                "05-treaps": {
+                    "metadata": {
+                        "date": "2022-01-18",
+                        "number": 5,
+                        "topic": "Treaps",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/5hKrRoPOukE"
+                            },
+                            {
+                                "title": "Red-Black Trees",
+                                "url": "https://youtu.be/H46X4tuL1ps"
+                            },
+                            {
+                                "title": "Randomization to the Rescue",
+                                "url": "https://youtu.be/OIiAHgiDwtc"
+                            },
+                            {
+                                "title": "Treaps",
+                                "url": "https://youtu.be/gvYdd_btRLI"
+                            },
+                            {
+                                "title": "Properties of Treaps",
+                                "url": "https://youtu.be/wKuh16jJG1U"
+                            },
+                            {
+                                "title": "Randomized Binary Search Trees",
+                                "url": "https://youtu.be/xwSIXgbdROU"
+                            },
+                            {
+                                "title": "Order Statistic Trees",
+                                "url": "https://youtu.be/jKUQcj8w4wQ"
+                            },
+                            {
+                                "title": "Heaps vs. BSTs",
+                                "url": "https://youtu.be/YHszHAfl9xM"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/05-treaps/slides.pdf"
+                        },
+                        "demo": {
+                            "path": "lectures/05-treaps/demo"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/05-treaps/slides-marked.pdf"
+                        }
+                    }
+                },
+                "06-kd_trees": {
+                    "metadata": {
+                        "date": "2022-01-20",
+                        "number": 6,
+                        "topic": "k-d Trees",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/SBoSLrdzAn0"
+                            },
+                            {
+                                "title": "k-d Trees",
+                                "url": "https://youtu.be/sBUIzn0FwC0"
+                            },
+                            {
+                                "title": "Nearest Neighbor Queries",
+                                "url": "https://youtu.be/AHLz5JKtgLY"
+                            },
+                            {
+                                "title": "Construction",
+                                "url": "https://youtu.be/9wlvLG6q0wQ"
+                            },
+                            {
+                                "title": "The Curse of Dimensionality",
+                                "url": "https://youtu.be/82a9dTcHuN8"
+                            },
+                            {
+                                "title": "Approximate Nearest Neighbors",
+                                "url": "https://youtu.be/KXKvhJoSCbM"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/06-kd_trees/slides.pdf"
+                        },
+                        "demo": {
+                            "path": "lectures/06-kd_trees/demo"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/06-kd_trees/slides-marked.pdf"
+                        }
+                    }
+                },
+                "07-lsh": {
+                    "metadata": {
+                        "date": "2022-01-25",
+                        "number": 7,
+                        "topic": "Locality Sensitive Hashing",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/1bibGM7aGqo"
+                            },
+                            {
+                                "title": "Implementing a NN Grid",
+                                "url": "https://youtu.be/4MXTN2hrRXM"
+                            },
+                            {
+                                "title": "Randomized Grids",
+                                "url": "https://youtu.be/LUiKO1GMPtg"
+                            },
+                            {
+                                "title": "Theory of Locality Sensitive Hashing",
+                                "url": "https://youtu.be/_bYeKKpcVkg"
+                            },
+                            {
+                                "title": "The Johnson-Lindenstrauss Lemma",
+                                "url": "https://youtu.be/oOwVI3Fn7sA"
+                            },
+                            {
+                                "title": "ANN in Practice",
+                                "url": "https://youtu.be/BwnOphDhnEk"
+                            },
+                            {
+                                "title": "LSH Demo",
+                                "url": "https://youtu.be/CkPfPJQbSjg"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/07-lsh/slides.pdf"
+                        },
+                        "demo": {
+                            "path": "lectures/07-lsh/demo"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/07-lsh/slides-marked.pdf"
+                        }
+                    }
+                },
+                "08-union_find": {
+                    "metadata": {
+                        "date": "2022-01-27",
+                        "number": 8,
+                        "topic": "Disjoint Set Forests",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/A5oUnrDmxIE"
+                            },
+                            {
+                                "title": "Disjoint Set Forests",
+                                "url": "https://youtu.be/eZ9zpUVE7VY"
+                            },
+                            {
+                                "title": "Path Compression and Union-by-Rank",
+                                "url": "https://youtu.be/dhsQFj9Z9Nk"
+                            },
+                            {
+                                "title": "Analysis",
+                                "url": "https://youtu.be/CzdXoLjTye0"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/08-union_find/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/08-union_find/slides-marked.pdf"
+                        }
+                    }
+                },
+                "09-greedy": {
+                    "metadata": {
+                        "date": "2022-02-01",
+                        "number": 9,
+                        "topic": "Greedy Algorithms",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/F2_BJVuglS4"
+                            },
+                            {
+                                "title": "Optimization Problems",
+                                "url": "https://youtu.be/o1UOMJYqsKs"
+                            },
+                            {
+                                "title": "Greedy Algorithms by Example",
+                                "url": "https://youtu.be/kLXnGYyPW_M"
+                            },
+                            {
+                                "title": "Activity Selection",
+                                "url": "https://youtu.be/VljvVR7_zQU"
+                            },
+                            {
+                                "title": "Exchange Arguments",
+                                "url": "https://youtu.be/OLDU-EoX7nk"
+                            },
+                            {
+                                "title": "Minimum Spanning Trees",
+                                "url": "https://youtu.be/ctqlbG24EtQ"
+                            },
+                            {
+                                "title": "Designing Greedy Algorithms",
+                                "url": "https://youtu.be/1W3vEgZORt4"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/09-greedy/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/09-greedy/slides-marked.pdf"
+                        }
+                    }
+                },
+                "10-backtracking": {
+                    "metadata": {
+                        "date": "2022-02-03",
+                        "number": 10,
+                        "topic": "Backtracking",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/5af5Wb_16NY"
+                            },
+                            {
+                                "title": "The 0-1 Knapsack Problem",
+                                "url": "https://youtu.be/il2wxXVEUhg"
+                            },
+                            {
+                                "title": "Backtracking",
+                                "url": "https://youtu.be/BRzdtxzaxZ0"
+                            },
+                            {
+                                "title": "Efficiency Analysis",
+                                "url": "https://youtu.be/mmGij8aZdFM"
+                            },
+                            {
+                                "title": "Branch and Bound",
+                                "url": "https://youtu.be/43_HxGPnlHI"
+                            },
+                            {
+                                "title": "Summary",
+                                "url": "https://youtu.be/8JZS1yW6pUQ"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/10-backtracking/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/10-backtracking/slides-marked.pdf"
+                        }
+                    }
+                },
+                "11-dp": {
+                    "metadata": {
+                        "date": "2022-02-08",
+                        "number": 11,
+                        "topic": "Dynamic Programming, pt. I",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/VzulM6IW264"
+                            },
+                            {
+                                "title": "The Weighted Activity Scheduling Problem",
+                                "url": "https://youtu.be/-2mb4SRM8kA"
+                            },
+                            {
+                                "title": "Step 01: Backtracking Solution",
+                                "url": "https://youtu.be/fTkhx8WTWs4"
+                            },
+                            {
+                                "title": "Step 02: A Nicer Backtracking Solution",
+                                "url": "https://youtu.be/w1iIZP8BBU0"
+                            },
+                            {
+                                "title": "Step 03: Memoization",
+                                "url": "https://youtu.be/fiuYwB6ia6Q"
+                            },
+                            {
+                                "title": "Top-Down vs. Bottom-Up",
+                                "url": "https://youtu.be/_HMCVjlm7V8"
+                            },
+                            {
+                                "title": "Summary of Dynamic Programming",
+                                "url": "https://youtu.be/R0E5ytG0blE"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/11-dp/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/11-dp/slides-marked.pdf"
+                        }
+                    }
+                },
+                "12-dp-lcs": {
+                    "metadata": {
+                        "date": "2022-02-10",
+                        "number": 12,
+                        "topic": "Longest Common Subsequence",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/z6OMnZdYNVc"
+                            },
+                            {
+                                "title": "Longest Common Subsequences",
+                                "url": "https://youtu.be/sKbyZwZD3I0"
+                            },
+                            {
+                                "title": "Step 01: Backtracking for LCS",
+                                "url": "https://youtu.be/_ErXE8gfAoE"
+                            },
+                            {
+                                "title": "Step 02: A Nicer Backtracking Solution for LCS",
+                                "url": "https://youtu.be/Y8QUpV_XnKw"
+                            },
+                            {
+                                "title": "Step 03: Top-Down DP Solution for LCS",
+                                "url": "https://youtu.be/vmzK2BJ6EJc"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/12-dp-lcs/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/12-dp-lcs/slides-marked.pdf"
+                        }
+                    }
+                },
+                "13-pytest": {
+                    "metadata": {
+                        "date": "2022-02-15",
+                        "number": 13,
+                        "topic": "Unit Testing (Optional)",
+                        "videos": [
+                            {
+                                "title": "Today's (Optional) Lecture",
+                                "url": "https://youtu.be/nE2alAiA6LI"
+                            },
+                            {
+                                "title": "How to Test Your Homework with pytest",
+                                "url": "https://youtu.be/Ian7V7HVT0k"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/13-pytest/slides.pdf"
+                        }
+                    }
+                },
+                "14-rabin_karp": {
+                    "metadata": {
+                        "date": "2022-02-17",
+                        "number": 14,
+                        "topic": "Rabin-Karp String Matching",
+                        "videos": [
+                            {
+                                "title": "String Matching",
+                                "url": "https://youtu.be/ZcgX5Z6hsVE"
+                            },
+                            {
+                                "title": "Rabin-Karp",
+                                "url": "https://youtu.be/n_7XllhBTic"
+                            },
+                            {
+                                "title": "Rolling Hashes",
+                                "url": "https://youtu.be/GeOyK4DcW_U"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/14-rabin_karp/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/14-rabin_karp/slides-marked.pdf"
+                        }
+                    }
+                },
+                "15-tries": {
+                    "metadata": {
+                        "date": "2022-02-22",
+                        "number": 15,
+                        "topic": "Tries",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/01E2aJ0cT-w"
+                            },
+                            {
+                                "title": "Tries",
+                                "url": "https://youtu.be/20cMPKhlhOE"
+                            },
+                            {
+                                "title": "Implementation",
+                                "url": "https://youtu.be/v3cpXVGG-3M"
+                            },
+                            {
+                                "title": "Practical Limitations and Demo",
+                                "url": "https://youtu.be/Xp9OA1PJR0Q"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/15-tries/slides.pdf"
+                        },
+                        "demo": {
+                            "path": "lectures/15-tries/demo"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/15-tries/slides-marked.pdf"
+                        }
+                    }
+                },
+                "16-suffix_trees": {
+                    "metadata": {
+                        "date": "2022-02-24",
+                        "number": 16,
+                        "topic": "Suffix Trees",
+                        "videos": [
+                            {
+                                "title": "Suffix Tries and Suffix Trees",
+                                "url": "https://youtu.be/7LoJQ-3FrfY"
+                            },
+                            {
+                                "title": "Longest Repeated Substring",
+                                "url": "https://youtu.be/ymeg97q4esg"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/16-suffix_trees/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/16-suffix_trees/slides-marked.pdf"
+                        }
+                    }
+                },
+                "17-bloom_filters": {
+                    "metadata": {
+                        "date": "2022-03-01",
+                        "number": 17,
+                        "topic": "Bloom Filters",
+                        "videos": [
+                            {
+                                "title": "Today's Lecture",
+                                "url": "https://youtu.be/qZ2FMlnqtBo"
+                            },
+                            {
+                                "title": "Bit Arrays",
+                                "url": "https://youtu.be/UCVsSP93Xag"
+                            },
+                            {
+                                "title": "Bloom Filters",
+                                "url": "https://youtu.be/f9tJEhK3Pvg"
+                            },
+                            {
+                                "title": "Bloom Filters in Practice",
+                                "url": "https://youtu.be/31L2RKmm7us"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/17-bloom_filters/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/17-bloom_filters/slides-marked.pdf"
+                        }
+                    }
+                },
+                "18-count_min_sketch": {
+                    "metadata": {
+                        "date": "2022-03-03",
+                        "number": 18,
+                        "topic": "Count-Min Sketch",
+                        "videos": [
+                            {
+                                "title": "The Count-Min Sketch",
+                                "url": "https://youtu.be/HFWS70TkN8A"
+                            },
+                            {
+                                "title": "Designing a Count-Min Sketch",
+                                "url": "https://youtu.be/geNsco2z2vc"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/18-count_min_sketch/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/18-count_min_sketch/slides-marked.pdf"
+                        }
+                    }
+                },
+                "19-complexity": {
+                    "metadata": {
+                        "date": "2022-03-08",
+                        "number": 19,
+                        "topic": "Complexity Theory",
+                        "videos": [
+                            {
+                                "title": "Complexity Theory",
+                                "url": "https://youtu.be/EGztdrEihSs"
+                            },
+                            {
+                                "title": "Eulerian and Hamiltonian Cycles",
+                                "url": "https://youtu.be/XsjuRZG8fqE"
+                            },
+                            {
+                                "title": "Short and Long Paths",
+                                "url": "https://youtu.be/EBjs7qBcI9A"
+                            },
+                            {
+                                "title": "Reductions",
+                                "url": "https://youtu.be/IcouVkI85s8"
+                            },
+                            {
+                                "title": "P = NP?",
+                                "url": "https://youtu.be/9exqHOqJFMw"
+                            },
+                            {
+                                "title": "NP-Complete Problems",
+                                "url": "https://youtu.be/KzC5MciZF8g"
+                            },
+                            {
+                                "title": "NP-Hard Problems",
+                                "url": "https://youtu.be/9pUZklUx8Kc"
+                            },
+                            {
+                                "title": "The Halting Problem",
+                                "url": "https://youtu.be/IeL9r4sPnGI"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/19-complexity/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/19-complexity/slides-marked.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "homeworks": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "homework.pdf",
+                    "solution.pdf",
+                    "template.zip"
+                ],
+                "optional_artifacts": [
+                    "starter_code.zip"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-dynamic_arrays": {
+                    "metadata": {
+                        "due": "2022-01-12 23:59:00",
+                        "released": "2022-01-04 00:00:00",
+                        "number": 1,
+                        "topic": "Dynamic Arrays"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/01-dynamic_arrays/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/01-dynamic_arrays/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/01-dynamic_arrays/template.zip"
+                        }
+                    }
+                },
+                "02-heaps-bst": {
+                    "metadata": {
+                        "due": "2022-01-19 23:59:00",
+                        "released": "2022-01-11 00:00:00",
+                        "number": 2,
+                        "topic": "Heaps and BSTs"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/02-heaps-bst/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/02-heaps-bst/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/02-heaps-bst/template.zip"
+                        },
+                        "starter_code.zip": {
+                            "path": "homeworks/02-heaps-bst/starter_code.zip"
+                        }
+                    }
+                },
+                "03-treaps-kdtrees": {
+                    "metadata": {
+                        "due": "2022-01-26 23:59:00",
+                        "released": "2022-01-19 23:59:00",
+                        "number": 3,
+                        "topic": "Treaps and KD Trees"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/03-treaps-kdtrees/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/03-treaps-kdtrees/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/03-treaps-kdtrees/template.zip"
+                        },
+                        "starter_code.zip": {
+                            "path": "homeworks/03-treaps-kdtrees/starter_code.zip"
+                        }
+                    }
+                },
+                "04-lsh-dsf": {
+                    "metadata": {
+                        "due": "2022-02-02 23:59:00",
+                        "released": "2022-01-26 23:59:00",
+                        "number": 4,
+                        "topic": "Locality Sensitive Hashing and Disjoint Set Forests"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/04-lsh-dsf/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/04-lsh-dsf/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/04-lsh-dsf/template.zip"
+                        },
+                        "starter_code.zip": {
+                            "path": "homeworks/04-lsh-dsf/starter_code.zip"
+                        }
+                    }
+                },
+                "05-greedy_backtracking": {
+                    "metadata": {
+                        "due": "2022-02-09 23:59:00",
+                        "released": "2022-02-02 23:59:00",
+                        "number": 5,
+                        "topic": "Disjoint Set Forests and Greedy Algorithms"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/05-greedy_backtracking/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/05-greedy_backtracking/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/05-greedy_backtracking/template.zip"
+                        },
+                        "starter_code.zip": {
+                            "path": "homeworks/05-greedy_backtracking/starter_code.zip"
+                        }
+                    }
+                },
+                "06-dp": {
+                    "metadata": {
+                        "due": "2022-02-16 23:59:00",
+                        "released": "2022-02-09 23:59:00",
+                        "number": 6,
+                        "topic": "Dynamic Programming"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/06-dp/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/06-dp/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/06-dp/template.zip"
+                        },
+                        "starter_code.zip": {
+                            "path": "homeworks/06-dp/starter_code.zip"
+                        }
+                    }
+                },
+                "07-rabin_karp": {
+                    "metadata": {
+                        "due": "2022-02-23 23:59:00",
+                        "released": "2022-02-16 23:59:00",
+                        "number": 7,
+                        "topic": "Rabin-Karp"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/07-rabin_karp/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/07-rabin_karp/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/07-rabin_karp/template.zip"
+                        }
+                    }
+                },
+                "08-tries-suffix_tries": {
+                    "metadata": {
+                        "due": "2022-03-02 23:59:00",
+                        "released": "2022-02-23 23:59:00",
+                        "number": 8,
+                        "topic": "Tries, Suffix Tries, Bloom Filters, Count-Min Sketch"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/08-tries-suffix_tries/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/08-tries-suffix_tries/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/08-tries-suffix_tries/template.zip"
+                        }
+                    }
+                },
+                "09-bloom-sketch": {
+                    "metadata": {
+                        "due": "2022-03-09 23:59:00",
+                        "released": "2022-03-02 23:59:00",
+                        "number": 9,
+                        "topic": "Bloom Filters, Count-Min Sketch"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/09-bloom-sketch/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/09-bloom-sketch/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/09-bloom-sketch/template.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "discussions": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "worksheet.pdf",
+                    "solution.pdf"
+                ],
+                "optional_artifacts": [
+                    "tanmay.pdf"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "recording": {
+                            "nullable": true,
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-dynamic_arrays": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/1vsIQDKn01I8L6Zwm-I4udsN5aMrWvU25/view?usp=sharing",
+                        "date": "2022-01-07",
+                        "number": 1,
+                        "topic": "Time Complexity Analysis"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/01-dynamic_arrays/worksheet.pdf"
+                        }
+                    }
+                },
+                "02-heaps": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/1srfosUJZ00fXHIS2gt40NLJ8hQxu4Xip/view?usp=sharing",
+                        "date": "2022-01-14",
+                        "number": 2,
+                        "topic": "Heaps"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/02-heaps/worksheet.pdf"
+                        }
+                    }
+                },
+                "03-kd_trees-lsh": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/16kqBllCvQw3V3MOOiYe831w5lFSOaZK8/view?usp=drivesdk",
+                        "date": "2022-01-21",
+                        "number": 3,
+                        "topic": "k-d Trees and LSH"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/03-kd_trees-lsh/worksheet.pdf"
+                        }
+                    }
+                },
+                "04-dsf-greedy": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/1oj5bvbaB3vj35do9-dNOV_KzY9ZSYGEK/view?usp=sharing",
+                        "date": "2022-01-28",
+                        "number": 4,
+                        "topic": "DSFs and Greedy Algorithms"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/04-dsf-greedy/worksheet.pdf"
+                        }
+                    }
+                },
+                "05-backtracking-memoization": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/1vlf6gFtvd4Ur7vfG1BB6HGQGGOtITGQR/view?usp=sharing",
+                        "date": "2022-02-04",
+                        "number": 5,
+                        "topic": "Time Complexity Analysis"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/05-backtracking-memoization/worksheet.pdf"
+                        }
+                    }
+                },
+                "06-tries": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/1Fpxu7ZaZi7WCJWfSax4ofbN5VxtWN7A2/view?usp=sharing",
+                        "date": "2022-02-25",
+                        "number": 6,
+                        "topic": "Tries and Suffix Trees"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/06-tries/worksheet.pdf"
+                        }
+                    }
+                },
+                "07-bloom": {
+                    "metadata": {
+                        "recording": "https://drive.google.com/file/d/1GSe4GV5m_SlD5j6uH_zd6sOB3x_qpMLF/view?usp=sharing",
+                        "date": "2022-03-04",
+                        "number": 7,
+                        "topic": "Bloom Filters"
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "discussions/07-bloom/worksheet.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "default": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {
+                "exam": {
+                    "metadata": {
+                        "due": "2022-03-17 23:59:00"
+                    },
+                    "artifacts": {}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4015 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Fira+Sans|Noto+Serif+JP|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>DSC 10 - Principles of Data Science</title>
+    </head>
+    <body class="text-md-left">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    
+<div class="row">
+    <div class="col-md-12 p-2">
+        <img class="d-block mx-auto mx-md-0" src="static/logo.svg">
+    </div>
+</div>
+
+<div style="margin-top: 3em; margin-bottom: 3em; padding: 0em">
+<div class="button-bar list-group list-group-horizontal-md h-30" style="text-align: center">
+
+    <a href="./syllabus.html" class="list-group-item list-group-item-action">
+    <i class="em em-scroll" aria-role="presentation"></i>
+    &nbsp;
+    Syllabus
+    <br>
+    <small class="text-muted">
+        FAQ, etc.
+    </small>
+  </a>
+
+    <a href="./office_hours.html" class="list-group-item list-group-item-action">
+    <i class="em em-male-teacher" aria-role="presentation"></i>
+    &nbsp;
+    Office Hours
+    <br>
+    <small class="text-muted">
+        Calendar
+    </small>
+  </a>
+
+    <a href="https://campuswire.com/c/GB6F5E8BE/feed" class="list-group-item list-group-item-action">
+    <i class="em em-left_speech_bubble" aria-role="presentation"></i>
+    &nbsp;
+    Campuswire
+    <br>
+    <small class="text-muted">
+        Message Board
+    </small>
+  </a>
+
+    <a href="https://www.gradescope.com/courses/277462" class="list-group-item list-group-item-action">
+    <i class="em em-100" aria-role="presentation"></i>
+    &nbsp;
+    Gradescope
+    <br>
+    <small class="text-muted">
+        Gradebook
+    </small>
+  </a>
+
+
+</div>
+<div class="button-bar list-group list-group-horizontal-md h-30" style="text-align: center">
+
+
+    <a href="http://diveintods.com" class="list-group-item list-group-item-action">
+    <i class="em em-blue_book" aria-role="presentation"></i>
+    &nbsp;
+    Textbook
+    <br>
+    <small class="text-muted">
+        Dive into Data Science
+    </small>
+  </a>
+
+    <a href="./tech_support.html" class="list-group-item list-group-item-action">
+    <i class="em em-female-technologist" aria-role="presentation"></i>
+    &nbsp;
+    Tech Support
+    <br>
+    <small class="text-muted">
+        Common Jupyter problems
+    </small>
+  </a>
+
+    <a href="./published/default/reference/reference.pdf" class="list-group-item list-group-item-action">
+    <i class="em em-bookmark_tabs" aria-role="presentation"></i>
+    &nbsp;
+    Reference Sheet
+    <br>
+    <small class="text-muted">
+        Babypandas, Python, etc.
+    </small>
+  </a>
+
+
+</div>
+</div>
+
+<div class="schedule">
+    <div class="schedule-week ">
+        <div class="schedule-week-title">
+            <h1 class="schedule-week-title-number">
+
+                    This Week
+
+
+
+
+                    <i class="em-svg em-checkered_flag" aria-role="presentation" ></i>
+
+            </h1>
+            <h2 class="schedule-week-title-topic">Regression</h2>
+
+
+
+
+
+                    <div class="badge badge-pill badge-danger">
+                        Final Exam on Saturday, Jul 31
+                    </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-7">
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 17 &mdash; Regression
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/17-regression/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/17-regression/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/fqz3ks4InpU">Prediction</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/s4KeLovok0c">Correlation</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/4OwfQvp2YG4">Regression</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture last">
+        <h3 class="schedule-week-component-title">
+            Lecture 18 &mdash; More Regression
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/18-more_regression/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/18-more_regression/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/UFzrmQdJID4">Root Mean Squared Error</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/OYG_KC4-Ceg">Residuals</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/V1dy5md7jVY">Confidence</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+            </div>
+            <div class="col-md-5">
+                <div class="list-group">
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 8
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/08-regression/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 17 and 18</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Wednesday, Jul 28 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Project 2
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=projects/02-meteorite_landings/project.ipynb&app=notebook">Project Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 01 through 16</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Saturday, Jul 31 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Discussion 5
+            </h3>
+            <div class="schedule-discussion-resources">
+                <ul class="schedule-discussion-resources">
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            Thursday July 29 at 1:00 PM PST
+via <a href=https://ucsd.zoom.us/j/98418322894?pwd=TkRpdVQ2dkluaTJJd3VrSjluNy93UT09>Zoom</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=discussions/05-final_review/discussion.ipynb&app=notebook">Discussion Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-movie_camera schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_TSUvLU7HJMAabUi4De0sXDXlGg7L9wLLF7ARQUKEC8vP9XbqFTIr2pY9unSiYfHW.Pjonn83Xy99jR-2Dr-2D&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=kYkm9Hxe6J0kSudzg7G1qJ5dAL4E24eXzULkST9qVAw&s=GA4-lCZoM0Z_FMZMLyl--5Y7CzUyuYOZZmnBXH9UVSc&e=">Zoom Recording</a>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="schedule">
+    <div class="schedule-week ">
+        <div class="schedule-week-title">
+            <h1 class="schedule-week-title-number">
+
+                    Week 4
+
+
+
+
+            </h1>
+            <h2 class="schedule-week-title-topic">The Bootstrap and Normal Curve</h2>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-7">
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 13 &mdash; The Bootstrap
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/13-bootstrap/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/13-bootstrap/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/UA3BaNcUgi8">The Bootstrap</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/mv-soTb_fu8">Bootstrapped Confidence Intervals</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 14 &mdash; CIs, Mean, Spread
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/14-ci_mean_spread/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/14-ci_mean_spread/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/5Z-G7vte3kU">Bootstrap Review</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/hxnZtV0HbH0">CIs and Testing</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/yoolO7P1qhg">Mean and Spread</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 15 &mdash; The Normal Distribution
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/15-clt/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/15-clt/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/eHMdyZ7vg_Y">The Normal Curve</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/dB50PhIsZpQ">The Central Limit Theorem</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture last">
+        <h3 class="schedule-week-component-title">
+            Lecture 16 &mdash; Normal Confidence Intervals
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/16-normal_ci/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/16-normal_ci/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/k1sBFHywk2M">Recap of CLT</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/iLoDYe4_Du4">Normal CIs</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/0ADUGVNxglY">CLT and Hypothesis Testing</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/30MgO9DMYpk">Experiment Design</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+            </div>
+            <div class="col-md-5">
+                <div class="list-group">
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 6
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/06-resampling_and_the_bootstrap/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 13 and 14</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Wednesday, Jul 21 at 23:59 PM
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 7
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/07-why_the_mean_matters_in_school_life/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 15 and 16</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Saturday, Jul 24 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 6
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/06-bootstrap/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 13 and 14</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Friday, Jul 23 at 23:59 PM
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 7
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/07-confidence_intervals/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 15 and 16</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Monday, Jul 26 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Discussion 4
+            </h3>
+            <div class="schedule-discussion-resources">
+                <ul class="schedule-discussion-resources">
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            Thursday July 22 at 1:00 PM PST
+via <a href=https://ucsd.zoom.us/j/98418322894?pwd=TkRpdVQ2dkluaTJJd3VrSjluNy93UT09>Zoom</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=discussions/04- CI_normal_CLT/discussion.ipynb&app=notebook">Discussion Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-movie_camera schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_MnkTYbYaNQyWtmu2DJh9vuqwY4-5FqUUAB2hWmphjNbXbmABlMey5GwB1JDXGMyOEK.6MtiIYMzwilIX8qd&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=DK8N6-L3Zr0mfckw1hk7UqwvftlxC5k-PXjwqDFBKOI&s=ECSwlCfAAjj-TVgzfJjn9q6ga-kq9afhmA3WTghoMPc&e=">Zoom Recording</a>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="schedule">
+    <div class="schedule-week ">
+        <div class="schedule-week-title">
+            <h1 class="schedule-week-title-number">
+
+                    Week 3
+
+
+
+
+            </h1>
+            <h2 class="schedule-week-title-topic">Statistical Modeling</h2>
+
+
+
+                    <div class="badge badge-pill badge-danger">
+                        Midterm on Wednesday, Jul 14
+                    </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-7">
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 9 &mdash; Sampling
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/09-sampling/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/09-sampling/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/JOysFpWBWvA">Sampling</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/KWoFEvcu1iM">Distributions</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 10 &mdash; Models
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/10-models_and_statistics/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/10-models_and_statistics/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/OkcaHPrhhfQ">German Plane Problem</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/Wvnr0V0bQh8">Racially Biased Jury Panel</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/V3-yofcDMyI">Mendel's Peas</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 11 &mdash; Hypothesis Testing
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/11-hypothesis_testing/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/11-hypothesis_testing/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/_4QJSuUGF48">Test Statistics</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/2nuQmAQcfmA">Total Variation Distance</a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=Jbgl-ON4OpE">Hypothesis Testing and p-Values</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture last">
+        <h3 class="schedule-week-component-title">
+            Lecture 12 &mdash; A/B Testing
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/12-ab_testing/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/12-ab_testing/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/MYIgozZNHqk">Permutation Tests</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/gpZQT0bymaU">Deflategate</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/e75vwJaE65E">Causality</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+            </div>
+            <div class="col-md-5">
+                <div class="list-group">
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 5
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/05-hypothesis_testing/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 09-12</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Saturday, Jul 17 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 4
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/04-simulation/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 09 and 10</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Friday, Jul 16 at 23:59 PM
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 5
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/05-hypothesis/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 11 and 12</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Monday, Jul 19 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Discussion 3
+            </h3>
+            <div class="schedule-discussion-resources">
+                <ul class="schedule-discussion-resources">
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            Thursday July 15 at 1:00 PM PST
+via <a href=https://ucsd.zoom.us/j/98418322894?pwd=TkRpdVQ2dkluaTJJd3VrSjluNy93UT09>Zoom</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=discussions/03-hypo_perm_testing/discussion.ipynb&app=notebook">Discussion Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-movie_camera schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_ExRDsF9fBsfkas-2DFg-5F9f20xkRKJfPYSayzDSO5Ac55rfXVDzjARBwv45NuegF-2Do5.hI1dhSUth4QpzJ3x&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=iY-Upf25rGr_Xo3uD0CTv4rwSO7vx9_oT24owf6NjDk&s=T8UQCDKdPQ4hCKu87DOties70brXreloaJPbNYci0zE&e=">Zoom Recording</a>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="schedule">
+    <div class="schedule-week ">
+        <div class="schedule-week-title">
+            <h1 class="schedule-week-title-number">
+
+                    Week 2
+
+
+
+
+            </h1>
+            <h2 class="schedule-week-title-topic">Plotting, Grouping, Applying</h2>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-7">
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 5 &mdash; Plotting
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/05-visualization/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/05-visualization/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/5Qcmomap47c">Intro</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/2THOnNQOGQw">Scatter Plots</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/Oobjl8Qx3e4">Line Plots</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/02HkbPPQEhA">Bar Graphs</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/BuMjvOk8JSs">Histograms</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 6 &mdash; Overlaying Plots, Functions, Apply
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/06-functions_apply/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/06-functions_apply/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/S2enqP2TQEU">Overlaid Plots</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/yXr6McJO1e8">Functions</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/sbkpXSJIBK4">Apply</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 7 &mdash; Group, Merge, Conditionals, Iteration
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/07-group_merge_conditionals_iteration/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/07-group_merge_conditionals_iteration/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/xZ5HgJjUvJ0">More GroupBy</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/jboCG36oXe8">Merge</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/jiZzL1apMlE">Conditionals and Iteration</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture last">
+        <h3 class="schedule-week-component-title">
+            Lecture 8 &mdash; Probability and Sampling
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/08-simulation/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/08-simulation/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/Ly7DmcsVBmA">Probability</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/HRicFb-Yy8s">np.random.choice</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/3vvI5G6BMts">Simulation</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/nTFFcBu7Aj0">Monty Hall</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+            </div>
+            <div class="col-md-5">
+                <div class="list-group">
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 3
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/03-apply_vis/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 05 and 06</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Wednesday, Jul 07 at 23:59 PM
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 4
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/04-conditionals_iteration/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 07 and 08</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Saturday, Jul 10 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Project 1
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=projects/01-chicago_taxis/project.ipynb&app=notebook">Project Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 01 through 07</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Monday, Jul 12 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 3
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/03-functions/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 05 and 06</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Friday, Jul 09 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Discussion 2
+            </h3>
+            <div class="schedule-discussion-resources">
+                <ul class="schedule-discussion-resources">
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            Thursday July 8 at 1:00 PM PST
+via <a href=https://ucsd.zoom.us/j/98418322894?pwd=TkRpdVQ2dkluaTJJd3VrSjluNy93UT09>Zoom</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=discussions/02-plotting_sim_midterm_review/discussion.ipynb&app=notebook">Discussion Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-movie_camera schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_UKAelwoKaF98KvgSoYXydS-5Fxp3ExYvczCuT0C8UeiceoQkyaLOcvWk6YfFxWtxI.TULE9j5T86Svcx4j&d=DwQFAg&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=Ux_uteYerxbI-8cTpJzgUPy9_j45oOXrGmqrY1sh5sY&s=1uYjTxrJOBV3tgND3EsxXlObNa64kQUVLFPyhuu7GB0&e=">Zoom Recording</a>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="schedule">
+    <div class="schedule-week ">
+        <div class="schedule-week-title">
+            <h1 class="schedule-week-title-number">
+
+                    Week 1
+
+
+
+
+            </h1>
+            <h2 class="schedule-week-title-topic">Introduction to Tables</h2>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+                <div class="alert alert-primary schedule-announcement">
+                    <p><h3 id="welcome-to-dsc-10">Welcome to DSC 10!</h3>
+<p>Here's how to get started:</p>
+<ul>
+<li>read the <a href="./syllabus.html">syllabus</a></li>
+<li>join our 
+  <a href="https://campuswire.com/c/GB6F5E8BE/feed">campuswire</a>
+  and 
+  <a href="https://www.gradescope.com/courses/277462">gradescope</a> 
+  with the email invitations you received earlier this week</li>
+<li>watch the intro lectures linked below</li>
+</ul>
+<p>Note that there are <em>four</em> assignments due this week -- two labs and two homeworks.
+Labs will typically be due on Wednesdays and Saturdays, while homeworks will be
+due on Fridays and Mondays. This week, however, the first lab will be
+due on Thursday instead of Wednesday due to delays in getting JupyterHub
+up and running.</p></p>
+                </div>
+
+
+
+        <div class="row">
+            <div class="col-md-7">
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 1 &mdash; Introduction
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/01-intro/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/01-intro/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-film_frames schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a href="published/lectures/01-intro/slides.pdf">Lecture Slides</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-book schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            Reading: <a href="https://eldridgejm.github.io/dive_into_data_science/01-getting_started/tools.html">Chapters 1.1 and 1.2</a>
+
+    </li>
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=H83mCDsT-Ak">Introduction</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/0Ki57v2gEeY">Syllabus</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/DNnagCkxeYw">Causality</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 2 &mdash; Basic Python
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/02-expressions_types/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/02-expressions_types/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-book schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            Reading: <a href="https://eldridgejm.github.io/dive_into_data_science/01-getting_started/expressions.html">Chapters 1.3-1.6</a>
+
+    </li>
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/qiGAZPEu7CM">First Python Code</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/O_P5RjaDQdo">Types</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/tNuZe6iAPF0">Submitting Assignments</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture ">
+        <h3 class="schedule-week-component-title">
+            Lecture 3 &mdash; Arrays and Tables
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/03-tables/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/03-tables/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-book schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            Reading: <a href="https://eldridgejm.github.io/dive_into_data_science/02-data_sets/arrays.html">Chapters 2.1-2.3</a>
+
+    </li>
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://youtu.be/PnBzu02fGJ0">Arrays</a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/ZRI3Zlc2D9g">Tables</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="schedule-lecture last">
+        <h3 class="schedule-week-component-title">
+            Lecture 4 &mdash; Querying and Groupby
+        </h3>
+        <div class="schedule-lecture-resources">
+            <ul class="schedule-lecture-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/04-queries_groupby/blank/lecture.ipynb&app=notebook">Lecture Notebook (Blank)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-spiral_note_pad schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=lectures/04-queries_groupby/filled/lecture.ipynb&app=notebook">Lecture Notebook (Filled)</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-book schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            Reading: <a href="https://eldridgejm.github.io/dive_into_data_science/02-data_sets/querying.html">Chapters 2.4 and 2.5</a>
+
+    </li>
+
+
+
+
+            </ul>
+        </div>
+
+        <div class="schedule-lecture-parts">
+            <ol class="schedule-lecture-parts">
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=etx5Pz1JPw8">Querying (Boolean Indexing)</a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=MH3-_OCOGDQ">GroupBy</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+
+
+            </div>
+            <div class="col-md-5">
+                <div class="list-group">
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 1
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/01-python_basics/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 01 and 02</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Thursday, Jul 01 at 23:59 PM
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Lab 2
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=labs/02-arrays_tables/lab.ipynb&app=notebook">Lab Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 03 and 04</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Saturday, Jul 03 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 1
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/01-python_basics/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 01 and 02</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Friday, Jul 02 at 23:59 PM
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Homework 2
+            </h3>
+            <div class="schedule-assignment-resources">
+                <ul class="schedule-assignment-resources">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+  href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=homeworks/02-arrays_tables/homework.ipynb&app=notebook">Homework Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            <small>covers: lectures 03 and 04</small>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="badge badge-pill badge-light">
+
+                    Was due
+
+                Monday, Jul 05 at 23:59 PM
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-group-item">
+            <h3 class="schedule-week-component-title">
+                Discussion 1
+            </h3>
+            <div class="schedule-discussion-resources">
+                <ul class="schedule-discussion-resources">
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+
+            Thursday July 1 at 1:00 PM PST
+via <a href=https://ucsd.zoom.us/j/98418322894?pwd=TkRpdVQ2dkluaTJJd3VrSjluNy93UT09>Zoom</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-question schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a target="blank_" 
+href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com//ucsd-ets/dsc10-2021-su-public&branch=master&subPath=discussions/01-python_basics_arrays_tables/discussion.ipynb&app=notebook">Discussion Notebook</a>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="schedule-resource">
+
+            <i class="em-svg em-movie_camera schedule-resource-icon" aria-role="presentation" ></i>
+
+
+            <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__ucsd.zoom.us_rec_share_e7Eh6E0ilNpyJ7E-2D2yJF42Aha-2D-2DF48qSyVPohGmu7dWvjH2thHDXSPSyFEmuie-2DQ.xCvWRhkD-5FaAUT6Xl&d=DwQFaQ&c=-35OiAkTchMrZOngvJPOeA&r=0pSoH9EWlGy4aMubeUKhQr21VtiERkm9me-UtgYicWY&m=dg0JeP6JKwS2zOEavNw8MbSeHu4bsRHEB3ehnVl7W5U&s=jvtFTuUJ9fj0vqJEYRZ5GHLphx0v5sBkQYe1GgFFf1M&e=">Zoom Recording</a>
+
+    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,736 @@
+{
+    "collections": {
+        "lectures": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "slides.pdf"
+                ],
+                "optional_artifacts": [
+                    "slides-marked.pdf",
+                    "mikio-slides.pdf",
+                    "mikio-slides-marked.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "note": {
+                            "type": "string"
+                        },
+                        "videos": {
+                            "nullable": true,
+                            "type": "list",
+                            "element_schema": {
+                                "type": "dict",
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-knn": {
+                    "metadata": {
+                        "date": "2023-01-10",
+                        "number": 1,
+                        "topic": "Introduction"
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/01-knn/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/01-knn/slides-marked.pdf"
+                        }
+                    }
+                },
+                "02-linear_models": {
+                    "metadata": {
+                        "date": "2023-01-12",
+                        "number": 2,
+                        "topic": "Linear Predictors",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/02-linear_models/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/02-linear_models/slides-marked.pdf"
+                        }
+                    }
+                },
+                "03-linear_models-II": {
+                    "metadata": {
+                        "date": "2023-01-17",
+                        "number": 3,
+                        "topic": "Least Squares Regression and Perceptrons",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/03-linear_models-II/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/03-linear_models-II/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/03-linear_models-II/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "04-gradient_descent": {
+                    "metadata": {
+                        "date": "2023-01-19",
+                        "number": 4,
+                        "topic": "Gradient Descent",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/04-gradient_descent/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/04-gradient_descent/slides-marked.pdf"
+                        },
+                        "mikio-slides.pdf": {
+                            "path": "lectures/04-gradient_descent/mikio-slides.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/04-gradient_descent/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "05-convexity": {
+                    "metadata": {
+                        "date": "2023-01-24",
+                        "number": 5,
+                        "topic": "Stochastic Gradient Descent and Convexity",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/05-convexity/slides.pdf"
+                        },
+                        "mikio-slides.pdf": {
+                            "path": "lectures/05-convexity/mikio-slides.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/05-convexity/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "06-svm": {
+                    "metadata": {
+                        "date": "2023-01-26",
+                        "number": 6,
+                        "topic": "SVMs",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/06-svm/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/06-svm/slides-marked.pdf"
+                        }
+                    }
+                },
+                "07-regularization": {
+                    "metadata": {
+                        "date": "2023-01-31",
+                        "number": 7,
+                        "topic": "Regularization",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/07-regularization/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/07-regularization/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/07-regularization/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "08-kernels": {
+                    "metadata": {
+                        "date": "2023-02-02",
+                        "number": 8,
+                        "topic": "Kernels",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/08-kernels/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/08-kernels/slides-marked.pdf"
+                        }
+                    }
+                },
+                "09-neural_networks": {
+                    "metadata": {
+                        "date": "2023-02-07",
+                        "number": 9,
+                        "topic": "Neural Networks",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/09-neural_networks/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/09-neural_networks/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/09-neural_networks/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "10-bayes_decision_theory": {
+                    "metadata": {
+                        "date": "2023-02-14",
+                        "number": 10,
+                        "topic": "Bayes Decision Theory",
+                        "videos": [
+                            {
+                                "title": "Probabilistic Modeling",
+                                "url": "https://youtu.be/NjSSmvzzpdo"
+                            },
+                            {
+                                "title": "Continuous Distributions",
+                                "url": "https://youtu.be/AVgFyuB9h7k"
+                            },
+                            {
+                                "title": "Bayes Optimal Classifier",
+                                "url": "https://youtu.be/MCowepdAQNc"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/10-bayes_decision_theory/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/10-bayes_decision_theory/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/10-bayes_decision_theory/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "11-density_estimation": {
+                    "metadata": {
+                        "date": "2023-02-16",
+                        "number": 11,
+                        "topic": "Density Estimation",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/11-density_estimation/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/11-density_estimation/slides-marked.pdf"
+                        }
+                    }
+                },
+                "12-mle": {
+                    "metadata": {
+                        "date": "2023-02-21",
+                        "number": 12,
+                        "topic": "Maximum Likelihood",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/12-mle/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/12-mle/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/12-mle/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "13-mv-gaussians": {
+                    "metadata": {
+                        "date": "2023-02-23",
+                        "number": 13,
+                        "topic": "Multivariate Gaussians",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/13-mv-gaussians/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/13-mv-gaussians/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/13-mv-gaussians/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "14-naive_bayes": {
+                    "metadata": {
+                        "date": "2023-02-28",
+                        "number": 14,
+                        "topic": "Naive Bayes",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/14-naive_bayes/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/14-naive_bayes/slides-marked.pdf"
+                        },
+                        "mikio-slides-marked.pdf": {
+                            "path": "lectures/14-naive_bayes/mikio-slides-marked.pdf"
+                        }
+                    }
+                },
+                "15-regression_probabilistic": {
+                    "metadata": {
+                        "date": "2023-03-02",
+                        "number": 15,
+                        "topic": "Regression (Probabilistic View)",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/15-regression_probabilistic/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/15-regression_probabilistic/slides-marked.pdf"
+                        }
+                    }
+                },
+                "16-decision_trees": {
+                    "metadata": {
+                        "date": "2023-03-07",
+                        "number": 16,
+                        "topic": "Decision Trees",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/16-decision_trees/slides.pdf"
+                        }
+                    }
+                },
+                "17-boosting": {
+                    "metadata": {
+                        "date": "2023-03-14",
+                        "number": 17,
+                        "topic": "Boosting",
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/17-boosting/slides.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "homeworks": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "homework.pdf",
+                    "solution.pdf",
+                    "template.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-nearest_neighbor_and_linear_models": {
+                    "metadata": {
+                        "due": "2023-01-18 23:59:00",
+                        "released": "2023-01-12 00:00:00",
+                        "number": 1,
+                        "topic": "Nearest Neighbors and Linear Regression"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/01-nearest_neighbor_and_linear_models/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/01-nearest_neighbor_and_linear_models/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/01-nearest_neighbor_and_linear_models/template.zip"
+                        }
+                    }
+                },
+                "02-linear_models_and_gradient": {
+                    "metadata": {
+                        "due": "2023-01-25 23:59:00",
+                        "released": "2023-01-19 00:00:00",
+                        "number": 2,
+                        "topic": "Linear Models and Gradient Descent"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/02-linear_models_and_gradient/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/02-linear_models_and_gradient/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/02-linear_models_and_gradient/template.zip"
+                        }
+                    }
+                },
+                "03-sgd_and_svm": {
+                    "metadata": {
+                        "due": "2023-02-01 23:59:00",
+                        "released": "2023-01-26 00:00:00",
+                        "number": 3,
+                        "topic": "Convexity and SVM"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/03-sgd_and_svm/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/03-sgd_and_svm/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/03-sgd_and_svm/template.zip"
+                        }
+                    }
+                },
+                "04-regularizers_and_kernels": {
+                    "metadata": {
+                        "due": "2023-02-08 23:59:00",
+                        "released": "2023-02-02 00:00:00",
+                        "number": 4,
+                        "topic": "Regularizers and Kernels"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/04-regularizers_and_kernels/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/04-regularizers_and_kernels/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/04-regularizers_and_kernels/template.zip"
+                        }
+                    }
+                },
+                "05-neural_networks": {
+                    "metadata": {
+                        "due": "2023-02-15 23:59:00",
+                        "released": "2023-02-09 00:00:00",
+                        "number": 5,
+                        "topic": "Neural Networks"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/05-neural_networks/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/05-neural_networks/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/05-neural_networks/template.zip"
+                        }
+                    }
+                },
+                "06-competition": {
+                    "metadata": {
+                        "due": "2023-02-22 23:59:00",
+                        "released": "2023-02-16 00:00:00",
+                        "number": 6,
+                        "topic": "Review"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/06-competition/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/06-competition/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/06-competition/template.zip"
+                        }
+                    }
+                },
+                "07-probabilistic": {
+                    "metadata": {
+                        "due": "2023-03-01 23:59:00",
+                        "released": "2023-02-23 00:00:00",
+                        "number": 7,
+                        "topic": "Probabilistic Modeling"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/07-probabilistic/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/07-probabilistic/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/07-probabilistic/template.zip"
+                        }
+                    }
+                },
+                "08-naive": {
+                    "metadata": {
+                        "due": "2023-03-08 23:59:00",
+                        "released": "2023-03-02 00:00:00",
+                        "number": 8,
+                        "topic": "Naive Bayes and Regression"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/08-naive/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/08-naive/solution.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/08-naive/template.zip"
+                        }
+                    }
+                },
+                "09-super_hw": {
+                    "metadata": {
+                        "due": "2023-03-22 23:59:00",
+                        "released": "2023-03-13 12:00:00",
+                        "number": 9,
+                        "topic": "Super Homework"
+                    },
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/09-super_hw/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/09-super_hw/template.zip"
+                        }
+                    }
+                }
+            }
+        },
+        "discussions": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "discussion.pdf",
+                    "solution.pdf"
+                ],
+                "optional_artifacts": [
+                    "slides.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "recording": {
+                            "nullable": true,
+                            "type": "string"
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "number": {
+                            "type": "integer"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-gradient": {
+                    "metadata": {
+                        "date": "2023-01-19",
+                        "number": 1,
+                        "topic": "Gradients",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/01-gradient/discussion.pdf"
+                        }
+                    }
+                },
+                "02-convexity": {
+                    "metadata": {
+                        "date": "2023-01-26",
+                        "number": 2,
+                        "topic": "Convexity",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/02-convexity/discussion.pdf"
+                        }
+                    }
+                },
+                "03-kernels": {
+                    "metadata": {
+                        "date": "2023-02-02",
+                        "number": 3,
+                        "topic": "Regularization and Kernels",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/03-kernels/discussion.pdf"
+                        }
+                    }
+                },
+                "04-probabilistic_modeling": {
+                    "metadata": {
+                        "date": "2023-02-15",
+                        "number": 4,
+                        "topic": "Probabilistic Modeling",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/04-probabilistic_modeling/discussion.pdf"
+                        }
+                    }
+                },
+                "05-multivariate-gaussians": {
+                    "metadata": {
+                        "date": "2023-02-22",
+                        "number": 5,
+                        "topic": "Bayes Classifiers",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/05-multivariate-gaussians/discussion.pdf"
+                        }
+                    }
+                },
+                "06-review": {
+                    "metadata": {
+                        "date": "2023-03-08",
+                        "number": 6,
+                        "topic": "Midterm 02 Review",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/06-review/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/06-review/solution.pdf"
+                        }
+                    }
+                },
+                "07-decision_trees": {
+                    "metadata": {
+                        "date": "2023-03-15",
+                        "number": 7,
+                        "topic": "Decision Trees",
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/07-decision_trees/discussion.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "labs": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "number": {
+                            "type": "integer"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-nearest_neighbor_and_linear_models": {
+                    "metadata": {
+                        "number": 1,
+                        "released": "2023-01-10 00:00:00",
+                        "ready": true,
+                        "due": "2023-01-15 23:59:00",
+                        "topic": "Nearest Neighbor and Regression"
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "default": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {}
+        }
+    }
+}
